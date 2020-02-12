@@ -15,6 +15,7 @@
 		391BFA3923F3E8BC007D8315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391BFA3723F3E8BC007D8315 /* LaunchScreen.storyboard */; };
 		391BFA4423F3E8BC007D8315 /* SFCloudMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BFA4323F3E8BC007D8315 /* SFCloudMusicTests.swift */; };
 		391BFA4F23F3E8BC007D8315 /* SFCloudMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BFA4E23F3E8BC007D8315 /* SFCloudMusicUITests.swift */; };
+		391BFA6123F3E963007D8315 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BFA6023F3E963007D8315 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		391BFA4A23F3E8BC007D8315 /* SFCloudMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFCloudMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		391BFA4E23F3E8BC007D8315 /* SFCloudMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCloudMusicUITests.swift; sourceTree = "<group>"; };
 		391BFA5023F3E8BC007D8315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		391BFA6023F3E963007D8315 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,10 @@
 		391BFA2B23F3E8BB007D8315 /* SFCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
+				391BFA5C23F3E929007D8315 /* Coordinators */,
+				391BFA5D23F3E92A007D8315 /* Scenes */,
+				391BFA5E23F3E92A007D8315 /* Extensions */,
+				391BFA5F23F3E92A007D8315 /* Utils */,
 				391BFA2C23F3E8BB007D8315 /* AppDelegate.swift */,
 				391BFA2E23F3E8BB007D8315 /* SceneDelegate.swift */,
 				391BFA3023F3E8BB007D8315 /* ViewController.swift */,
@@ -126,6 +132,35 @@
 				391BFA5023F3E8BC007D8315 /* Info.plist */,
 			);
 			path = SFCloudMusicUITests;
+			sourceTree = "<group>";
+		};
+		391BFA5C23F3E929007D8315 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				391BFA6023F3E963007D8315 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		391BFA5D23F3E92A007D8315 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		391BFA5E23F3E92A007D8315 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		391BFA5F23F3E92A007D8315 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				391BFA6123F3E963007D8315 /* AppCoordinator.swift in Sources */,
 				391BFA3123F3E8BB007D8315 /* ViewController.swift in Sources */,
 				391BFA2D23F3E8BB007D8315 /* AppDelegate.swift in Sources */,
 				391BFA2F23F3E8BB007D8315 /* SceneDelegate.swift in Sources */,
