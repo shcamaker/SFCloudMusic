@@ -7,7 +7,12 @@
 //
 
 import UIKit
+import XCoordinator
 
-class MineCoordinator: NavigationCoordinator {
+enum MineRoute: Route {
+    case news
+    case userList
+}
+class MineCoordinator: NavigationCoordinator<MineRoute> {
 
 }

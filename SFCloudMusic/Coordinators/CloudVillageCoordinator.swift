@@ -7,7 +7,12 @@
 //
 
 import UIKit
+import XCoordinator
 
-class CloudVillageCoordinator: NavigationCoordinator {
+enum CloudVillageRoute: Route {
+    case news
+    case userList
+}
+class CloudVillageCoordinator: NavigationCoordinator<CloudVillageRoute> {
 
 }

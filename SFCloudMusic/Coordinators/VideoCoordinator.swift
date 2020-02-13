@@ -7,7 +7,12 @@
 //
 
 import UIKit
+import XCoordinator
 
-class VideoCoordinator: NavigationCoordinator {
+enum VideoRoute: Route {
+    case news
+    case userList
+}
+class VideoCoordinator: NavigationCoordinator<VideoRoute> {
 
 }

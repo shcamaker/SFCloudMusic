@@ -7,7 +7,12 @@
 //
 
 import UIKit
+import XCoordinator
 
-class AccountCoordinator: NavigationCoordinator {
+enum AccountRoute: Route {
+    case news
+    case userList
+}
+class AccountCoordinator: NavigationCoordinator<AccountRoute> {
 
 }

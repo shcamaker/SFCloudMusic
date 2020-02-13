@@ -7,7 +7,14 @@
 //
 
 import UIKit
+import XCoordinator
 
-class DiscoverCoordinator: NavigationCoordinator {
+enum DiscoverRoute: Route {
+    case news
+    case userList
+}
+
+
+class DiscoverCoordinator: NavigationCoordinator<DiscoverRoute> {
 
 }
