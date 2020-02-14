@@ -13,7 +13,6 @@ import XCoordinator
 enum AppRoute: Route {
     case login
     case homeTab
-
 }
 
 class AppCoordinator: NavigationCoordinator<AppRoute> {
@@ -30,7 +29,6 @@ class AppCoordinator: NavigationCoordinator<AppRoute> {
                }
                let viewModel = LoginViewModelImpl(router: unownedRouter)
                viewController.bind(to: viewModel)
-               print(viewController)
                return .push(viewController)
            case .homeTab:
                return .present(HomeTabCoordinator())

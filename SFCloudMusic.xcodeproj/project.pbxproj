@@ -16,6 +16,9 @@
 		391BFA4423F3E8BC007D8315 /* SFCloudMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BFA4323F3E8BC007D8315 /* SFCloudMusicTests.swift */; };
 		391BFA4F23F3E8BC007D8315 /* SFCloudMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BFA4E23F3E8BC007D8315 /* SFCloudMusicUITests.swift */; };
 		391BFA6123F3E963007D8315 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BFA6023F3E963007D8315 /* AppCoordinator.swift */; };
+		393973F323F67DEA00295EAD /* UIImage+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F023F67DE600295EAD /* UIImage+UI.swift */; };
+		393973F423F67DEA00295EAD /* UIColor+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F123F67DE800295EAD /* UIColor+UI.swift */; };
+		393973F723F6A2D800295EAD /* UIImageView+SD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F623F6A2D800295EAD /* UIImageView+SD.swift */; };
 		39D1482B23F4FA420068E105 /* HomeTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1482A23F4FA420068E105 /* HomeTabCoordinator.swift */; };
 		39D1482D23F500B90068E105 /* DiscoverCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1482C23F500B90068E105 /* DiscoverCoordinator.swift */; };
 		39D1482F23F500D90068E105 /* VideoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1482E23F500D90068E105 /* VideoCoordinator.swift */; };
@@ -36,6 +39,7 @@
 		39D1485423F52D3C0068E105 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1485223F52D3C0068E105 /* VideoViewController.swift */; };
 		39D1485523F52D3C0068E105 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D1485323F52D3C0068E105 /* Video.storyboard */; };
 		39D1485723F52F5C0068E105 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1485623F52F5C0068E105 /* BindableType.swift */; };
+		39D1485923F594E00068E105 /* DiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1485823F594E00068E105 /* DiscoverViewModel.swift */; };
 		723D682B6DD86A85A4D4E167 /* Pods_SFCloudMusic_SFCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F86953DFA63DF725446EAD /* Pods_SFCloudMusic_SFCloudMusicTests.framework */; };
 		7B935185115152E6A2DAA985 /* Pods_SFCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03149FC307EA6E816DBD222A /* Pods_SFCloudMusic.framework */; };
 		E517E7C397BEAEA22DEF7E8F /* Pods_SFCloudMusic_SFCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A321410D8C7ED30627969CD /* Pods_SFCloudMusic_SFCloudMusicUITests.framework */; };
@@ -79,6 +83,9 @@
 		391BFA4E23F3E8BC007D8315 /* SFCloudMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCloudMusicUITests.swift; sourceTree = "<group>"; };
 		391BFA5023F3E8BC007D8315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		391BFA6023F3E963007D8315 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		393973F023F67DE600295EAD /* UIImage+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+UI.swift"; sourceTree = "<group>"; };
+		393973F123F67DE800295EAD /* UIColor+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+UI.swift"; sourceTree = "<group>"; };
+		393973F623F6A2D800295EAD /* UIImageView+SD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SD.swift"; sourceTree = "<group>"; };
 		39D1482A23F4FA420068E105 /* HomeTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabCoordinator.swift; sourceTree = "<group>"; };
 		39D1482C23F500B90068E105 /* DiscoverCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCoordinator.swift; sourceTree = "<group>"; };
 		39D1482E23F500D90068E105 /* VideoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCoordinator.swift; sourceTree = "<group>"; };
@@ -99,6 +106,7 @@
 		39D1485223F52D3C0068E105 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		39D1485323F52D3C0068E105 /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
 		39D1485623F52F5C0068E105 /* BindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
+		39D1485823F594E00068E105 /* DiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewModel.swift; sourceTree = "<group>"; };
 		68FADECB5E0E06EDB63C4BF2 /* Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicTests/Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig"; sourceTree = "<group>"; };
 		96F86953DFA63DF725446EAD /* Pods_SFCloudMusic_SFCloudMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFCloudMusic_SFCloudMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A489081DB43354771847AD9 /* Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicUITests/Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -222,11 +230,11 @@
 			isa = PBXGroup;
 			children = (
 				39D1483923F502320068E105 /* Login */,
-				39D1483823F502310068E105 /* Account */,
-				39D1483623F502310068E105 /* CloudVillage */,
 				39D1483B23F502320068E105 /* Discover */,
-				39D1483723F502310068E105 /* Mine */,
 				39D1483A23F502320068E105 /* Video */,
+				39D1483723F502310068E105 /* Mine */,
+				39D1483623F502310068E105 /* CloudVillage */,
+				39D1483823F502310068E105 /* Account */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -234,6 +242,9 @@
 		391BFA5E23F3E92A007D8315 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				393973F123F67DE800295EAD /* UIColor+UI.swift */,
+				393973F023F67DE600295EAD /* UIImage+UI.swift */,
+				393973F623F6A2D800295EAD /* UIImageView+SD.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -296,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				39D1484A23F52CF30068E105 /* DiscoverViewController.swift */,
+				39D1485823F594E00068E105 /* DiscoverViewModel.swift */,
 				39D1484C23F52D1C0068E105 /* Discover.storyboard */,
 			);
 			path = Discover;
@@ -575,6 +587,8 @@
 			files = (
 				39D1482B23F4FA420068E105 /* HomeTabCoordinator.swift in Sources */,
 				391BFA6123F3E963007D8315 /* AppCoordinator.swift in Sources */,
+				393973F323F67DEA00295EAD /* UIImage+UI.swift in Sources */,
+				393973F423F67DEA00295EAD /* UIColor+UI.swift in Sources */,
 				39D1485423F52D3C0068E105 /* VideoViewController.swift in Sources */,
 				39D1484523F52CA00068E105 /* AccountViewController.swift in Sources */,
 				39D1484023F502620068E105 /* LoginViewModelImpl.swift in Sources */,
@@ -588,8 +602,10 @@
 				391BFA2D23F3E8BB007D8315 /* AppDelegate.swift in Sources */,
 				39D1483123F500E50068E105 /* MineCoordinator.swift in Sources */,
 				39D1485023F52D290068E105 /* MineViewController.swift in Sources */,
+				393973F723F6A2D800295EAD /* UIImageView+SD.swift in Sources */,
 				39D1483323F500F10068E105 /* CloudVillageCoordinator.swift in Sources */,
 				391BFA2F23F3E8BB007D8315 /* SceneDelegate.swift in Sources */,
+				39D1485923F594E00068E105 /* DiscoverViewModel.swift in Sources */,
 				39D1484123F502620068E105 /* LoginViewController.swift in Sources */,
 				39D1482F23F500D90068E105 /* VideoCoordinator.swift in Sources */,
 			);
@@ -775,7 +791,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenhaichao.SFCloudMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -794,7 +810,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenhaichao.SFCloudMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -1,4 +1,4 @@
-//
+ //
 //  LoginViewController.swift
 //  RXDemo
 //
@@ -22,23 +22,12 @@ class LoginViewController: UIViewController, BindableType {
     var viewModel: LoginViewModel!
     private let disposeBag = DisposeBag()
     
-    var ac =  CocoaAction(workFactory: { (void) -> Observable<Void> in
-        return Observable.create { observer in
-            observer.onCompleted()
-            return Disposables.create()
-        }
-    })
     
     override func viewDidLoad() {
         super.viewDidLoad()
         print(self)
 
-//        loginButton.rx.action = CocoaAction(workFactory: { (void) -> Observable<Void> in
-//            return Observable.create { observer in
-//                observer.onCompleted()
-//                return Disposables.create()
-//            }
-//        })
+
         
     }
     
@@ -46,12 +35,6 @@ class LoginViewController: UIViewController, BindableType {
         loginButton.rx.tap
             .bind(to: viewModel.input.loginTrigger)
             .disposed(by: disposeBag)
-//       loginButton.rx.action = CocoaAction(workFactory: { (void) -> Observable<Void> in
-//           return Observable.create { observer in
-//               observer.onCompleted()
-//               return Disposables.create()
-//           }
-//       })
     }
    
 }

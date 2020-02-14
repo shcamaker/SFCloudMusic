@@ -12,7 +12,8 @@ target 'SFCloudMusic' do
   pod 'XCoordinator'
   pod 'XCoordinator/RxSwift'
   pod 'XCoordinator/Combine'
-
+  pod 'SDWebImage'
+  
   target 'SFCloudMusicTests' do
     pod 'RxBlocking', '~> 5'
     pod 'RxTest', '~> 5'
