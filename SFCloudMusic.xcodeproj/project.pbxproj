@@ -19,6 +19,12 @@
 		393973F323F67DEA00295EAD /* UIImage+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F023F67DE600295EAD /* UIImage+UI.swift */; };
 		393973F423F67DEA00295EAD /* UIColor+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F123F67DE800295EAD /* UIColor+UI.swift */; };
 		393973F723F6A2D800295EAD /* UIImageView+SD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F623F6A2D800295EAD /* UIImageView+SD.swift */; };
+		39AE046223F7FD81002AAE3E /* SFCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */; };
+		39AE046423F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046323F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift */; };
+		39AE046623F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046523F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift */; };
+		39AE046923F818DC002AAE3E /* SFBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */; };
+		39AE046B23F819BD002AAE3E /* SFBaseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046A23F819BD002AAE3E /* SFBaseCellModel.swift */; };
+		39AE046D23F82C1B002AAE3E /* SFBaseSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046C23F82C1B002AAE3E /* SFBaseSectionModel.swift */; };
 		39D1482B23F4FA420068E105 /* HomeTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1482A23F4FA420068E105 /* HomeTabCoordinator.swift */; };
 		39D1482D23F500B90068E105 /* DiscoverCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1482C23F500B90068E105 /* DiscoverCoordinator.swift */; };
 		39D1482F23F500D90068E105 /* VideoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1482E23F500D90068E105 /* VideoCoordinator.swift */; };
@@ -86,6 +92,12 @@
 		393973F023F67DE600295EAD /* UIImage+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+UI.swift"; sourceTree = "<group>"; };
 		393973F123F67DE800295EAD /* UIColor+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+UI.swift"; sourceTree = "<group>"; };
 		393973F623F6A2D800295EAD /* UIImageView+SD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SD.swift"; sourceTree = "<group>"; };
+		39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCycleScrollView.swift; sourceTree = "<group>"; };
+		39AE046323F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverCycleScrollCell.swift; sourceTree = "<group>"; };
+		39AE046523F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverCycleScrollCellModel.swift; sourceTree = "<group>"; };
+		39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseTableViewCell.swift; sourceTree = "<group>"; };
+		39AE046A23F819BD002AAE3E /* SFBaseCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseCellModel.swift; sourceTree = "<group>"; };
+		39AE046C23F82C1B002AAE3E /* SFBaseSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseSectionModel.swift; sourceTree = "<group>"; };
 		39D1482A23F4FA420068E105 /* HomeTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabCoordinator.swift; sourceTree = "<group>"; };
 		39D1482C23F500B90068E105 /* DiscoverCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCoordinator.swift; sourceTree = "<group>"; };
 		39D1482E23F500D90068E105 /* VideoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCoordinator.swift; sourceTree = "<group>"; };
@@ -183,6 +195,7 @@
 				391BFA5D23F3E92A007D8315 /* Scenes */,
 				391BFA5E23F3E92A007D8315 /* Extensions */,
 				391BFA5F23F3E92A007D8315 /* Utils */,
+				39AE046023F7F003002AAE3E /* CustomControl */,
 				391BFA2C23F3E8BB007D8315 /* AppDelegate.swift */,
 				391BFA2E23F3E8BB007D8315 /* SceneDelegate.swift */,
 				391BFA3023F3E8BB007D8315 /* ViewController.swift */,
@@ -229,6 +242,7 @@
 		391BFA5D23F3E92A007D8315 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				39AE046723F818B7002AAE3E /* Base */,
 				39D1483923F502320068E105 /* Login */,
 				39D1483B23F502320068E105 /* Discover */,
 				39D1483A23F502320068E105 /* Video */,
@@ -255,6 +269,24 @@
 				39D1485623F52F5C0068E105 /* BindableType.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		39AE046023F7F003002AAE3E /* CustomControl */ = {
+			isa = PBXGroup;
+			children = (
+				39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */,
+			);
+			path = CustomControl;
+			sourceTree = "<group>";
+		};
+		39AE046723F818B7002AAE3E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */,
+				39AE046A23F819BD002AAE3E /* SFBaseCellModel.swift */,
+				39AE046C23F82C1B002AAE3E /* SFBaseSectionModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		39D1483623F502310068E105 /* CloudVillage */ = {
@@ -308,6 +340,8 @@
 			children = (
 				39D1484A23F52CF30068E105 /* DiscoverViewController.swift */,
 				39D1485823F594E00068E105 /* DiscoverViewModel.swift */,
+				39AE046323F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift */,
+				39AE046523F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift */,
 				39D1484C23F52D1C0068E105 /* Discover.storyboard */,
 			);
 			path = Discover;
@@ -391,6 +425,7 @@
 		391BFA2123F3E8BA007D8315 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SF;
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "沈海超";
@@ -591,13 +626,16 @@
 				393973F423F67DEA00295EAD /* UIColor+UI.swift in Sources */,
 				39D1485423F52D3C0068E105 /* VideoViewController.swift in Sources */,
 				39D1484523F52CA00068E105 /* AccountViewController.swift in Sources */,
+				39AE046D23F82C1B002AAE3E /* SFBaseSectionModel.swift in Sources */,
 				39D1484023F502620068E105 /* LoginViewModelImpl.swift in Sources */,
+				39AE046623F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift in Sources */,
 				39D1483F23F502620068E105 /* LoginViewModel.swift in Sources */,
 				39D1484B23F52CF30068E105 /* DiscoverViewController.swift in Sources */,
 				391BFA3123F3E8BB007D8315 /* ViewController.swift in Sources */,
 				39D1485723F52F5C0068E105 /* BindableType.swift in Sources */,
 				39D1482D23F500B90068E105 /* DiscoverCoordinator.swift in Sources */,
 				39D1483523F501020068E105 /* AccountCoordinator.swift in Sources */,
+				39AE046223F7FD81002AAE3E /* SFCycleScrollView.swift in Sources */,
 				39D1484923F52CB90068E105 /* CloundVillageViewController.swift in Sources */,
 				391BFA2D23F3E8BB007D8315 /* AppDelegate.swift in Sources */,
 				39D1483123F500E50068E105 /* MineCoordinator.swift in Sources */,
@@ -606,6 +644,9 @@
 				39D1483323F500F10068E105 /* CloudVillageCoordinator.swift in Sources */,
 				391BFA2F23F3E8BB007D8315 /* SceneDelegate.swift in Sources */,
 				39D1485923F594E00068E105 /* DiscoverViewModel.swift in Sources */,
+				39AE046923F818DC002AAE3E /* SFBaseTableViewCell.swift in Sources */,
+				39AE046423F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift in Sources */,
+				39AE046B23F819BD002AAE3E /* SFBaseCellModel.swift in Sources */,
 				39D1484123F502620068E105 /* LoginViewController.swift in Sources */,
 				39D1482F23F500D90068E105 /* VideoCoordinator.swift in Sources */,
 			);

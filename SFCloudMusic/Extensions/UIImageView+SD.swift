@@ -27,6 +27,4 @@ extension UIImageView {
         sd_setImage(with: url, placeholderImage: placeholder, completed: completed)
     }
     
-   
-
 }
