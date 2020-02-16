@@ -1,5 +1,5 @@
 //
-//  LoginViewModelImpl.swift
+//  SFLoginViewModel.swift
 //  RXDemo
 //
 //  Created by Alex.Shen on 1/14/20.
@@ -10,7 +10,7 @@ import Action
 import RxSwift
 import XCoordinator
 
-class LoginViewModelImpl: LoginViewModel, LoginViewModelInput, LoginViewModelOutput {
+class SFLoginViewModel: NSObject {
     private(set) lazy var loginTrigger = loginAction.inputs
     private let router: UnownedRouter<AppRoute>
     

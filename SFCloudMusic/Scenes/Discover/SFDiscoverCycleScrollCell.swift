@@ -10,17 +10,18 @@ import UIKit
 
 class SFDiscoverCycleScrollCell: SFBaseTableViewCell {
     
-    @IBOutlet weak var testLabel: UILabel!
+    
+    let cycleView: SFCycleScrollView = SFCycleScrollView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 150))
     
     override func buildUI() {
-        
+        contentView.addSubview(cycleView)
     }
     
     override func bindViewModel() {
         guard let viewModel = viewModel as? SFDiscoverCycleScrollCellModel else {
             return
         }
-        testLabel.text = viewModel.name
+        
     }
 
 

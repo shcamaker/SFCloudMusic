@@ -19,20 +19,23 @@
 		393973F323F67DEA00295EAD /* UIImage+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F023F67DE600295EAD /* UIImage+UI.swift */; };
 		393973F423F67DEA00295EAD /* UIColor+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F123F67DE800295EAD /* UIColor+UI.swift */; };
 		393973F723F6A2D800295EAD /* UIImageView+SD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F623F6A2D800295EAD /* UIImageView+SD.swift */; };
+		39818CCB23F950970055C2CF /* SFCycleScrollView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39818CCA23F950970055C2CF /* SFCycleScrollView1.swift */; };
+		39818CD923F990F80055C2CF /* GitHubAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39818CD823F990F80055C2CF /* GitHubAPI.swift */; };
+		39818CDB23F9915A0055C2CF /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39818CDA23F9915A0055C2CF /* String+URL.swift */; };
 		39AE046223F7FD81002AAE3E /* SFCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */; };
 		39AE046423F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046323F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift */; };
 		39AE046623F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046523F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift */; };
 		39AE046923F818DC002AAE3E /* SFBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */; };
 		39AE046B23F819BD002AAE3E /* SFBaseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046A23F819BD002AAE3E /* SFBaseCellModel.swift */; };
 		39AE046D23F82C1B002AAE3E /* SFBaseSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046C23F82C1B002AAE3E /* SFBaseSectionModel.swift */; };
+		39AE047623F92019002AAE3E /* SFVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE047523F92019002AAE3E /* SFVideoViewModel.swift */; };
 		39D1482B23F4FA420068E105 /* HomeTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1482A23F4FA420068E105 /* HomeTabCoordinator.swift */; };
 		39D1482D23F500B90068E105 /* DiscoverCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1482C23F500B90068E105 /* DiscoverCoordinator.swift */; };
 		39D1482F23F500D90068E105 /* VideoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1482E23F500D90068E105 /* VideoCoordinator.swift */; };
 		39D1483123F500E50068E105 /* MineCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1483023F500E50068E105 /* MineCoordinator.swift */; };
 		39D1483323F500F10068E105 /* CloudVillageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1483223F500F10068E105 /* CloudVillageCoordinator.swift */; };
 		39D1483523F501020068E105 /* AccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1483423F501020068E105 /* AccountCoordinator.swift */; };
-		39D1483F23F502620068E105 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1483C23F502620068E105 /* LoginViewModel.swift */; };
-		39D1484023F502620068E105 /* LoginViewModelImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1483D23F502620068E105 /* LoginViewModelImpl.swift */; };
+		39D1484023F502620068E105 /* SFLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1483D23F502620068E105 /* SFLoginViewModel.swift */; };
 		39D1484123F502620068E105 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1483E23F502620068E105 /* LoginViewController.swift */; };
 		39D1484423F52CA00068E105 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D1484223F52CA00068E105 /* Account.storyboard */; };
 		39D1484523F52CA00068E105 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1484323F52CA00068E105 /* AccountViewController.swift */; };
@@ -92,20 +95,23 @@
 		393973F023F67DE600295EAD /* UIImage+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+UI.swift"; sourceTree = "<group>"; };
 		393973F123F67DE800295EAD /* UIColor+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+UI.swift"; sourceTree = "<group>"; };
 		393973F623F6A2D800295EAD /* UIImageView+SD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SD.swift"; sourceTree = "<group>"; };
+		39818CCA23F950970055C2CF /* SFCycleScrollView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCycleScrollView1.swift; sourceTree = "<group>"; };
+		39818CD823F990F80055C2CF /* GitHubAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitHubAPI.swift; sourceTree = "<group>"; };
+		39818CDA23F9915A0055C2CF /* String+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
 		39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCycleScrollView.swift; sourceTree = "<group>"; };
 		39AE046323F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverCycleScrollCell.swift; sourceTree = "<group>"; };
 		39AE046523F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverCycleScrollCellModel.swift; sourceTree = "<group>"; };
 		39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseTableViewCell.swift; sourceTree = "<group>"; };
 		39AE046A23F819BD002AAE3E /* SFBaseCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseCellModel.swift; sourceTree = "<group>"; };
 		39AE046C23F82C1B002AAE3E /* SFBaseSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseSectionModel.swift; sourceTree = "<group>"; };
+		39AE047523F92019002AAE3E /* SFVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFVideoViewModel.swift; sourceTree = "<group>"; };
 		39D1482A23F4FA420068E105 /* HomeTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabCoordinator.swift; sourceTree = "<group>"; };
 		39D1482C23F500B90068E105 /* DiscoverCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCoordinator.swift; sourceTree = "<group>"; };
 		39D1482E23F500D90068E105 /* VideoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCoordinator.swift; sourceTree = "<group>"; };
 		39D1483023F500E50068E105 /* MineCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineCoordinator.swift; sourceTree = "<group>"; };
 		39D1483223F500F10068E105 /* CloudVillageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudVillageCoordinator.swift; sourceTree = "<group>"; };
 		39D1483423F501020068E105 /* AccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCoordinator.swift; sourceTree = "<group>"; };
-		39D1483C23F502620068E105 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		39D1483D23F502620068E105 /* LoginViewModelImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelImpl.swift; sourceTree = "<group>"; };
+		39D1483D23F502620068E105 /* SFLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFLoginViewModel.swift; sourceTree = "<group>"; };
 		39D1483E23F502620068E105 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		39D1484223F52CA00068E105 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		39D1484323F52CA00068E105 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +199,7 @@
 			children = (
 				391BFA5C23F3E929007D8315 /* Coordinators */,
 				391BFA5D23F3E92A007D8315 /* Scenes */,
+				39818CD723F990E10055C2CF /* Network */,
 				391BFA5E23F3E92A007D8315 /* Extensions */,
 				391BFA5F23F3E92A007D8315 /* Utils */,
 				39AE046023F7F003002AAE3E /* CustomControl */,
@@ -256,6 +263,7 @@
 		391BFA5E23F3E92A007D8315 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				39818CDA23F9915A0055C2CF /* String+URL.swift */,
 				393973F123F67DE800295EAD /* UIColor+UI.swift */,
 				393973F023F67DE600295EAD /* UIImage+UI.swift */,
 				393973F623F6A2D800295EAD /* UIImageView+SD.swift */,
@@ -271,10 +279,19 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		39818CD723F990E10055C2CF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				39818CD823F990F80055C2CF /* GitHubAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		39AE046023F7F003002AAE3E /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
 				39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */,
+				39818CCA23F950970055C2CF /* SFCycleScrollView1.swift */,
 			);
 			path = CustomControl;
 			sourceTree = "<group>";
@@ -320,8 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				39D1483E23F502620068E105 /* LoginViewController.swift */,
-				39D1483C23F502620068E105 /* LoginViewModel.swift */,
-				39D1483D23F502620068E105 /* LoginViewModelImpl.swift */,
+				39D1483D23F502620068E105 /* SFLoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -330,6 +346,7 @@
 			isa = PBXGroup;
 			children = (
 				39D1485223F52D3C0068E105 /* VideoViewController.swift */,
+				39AE047523F92019002AAE3E /* SFVideoViewModel.swift */,
 				39D1485323F52D3C0068E105 /* Video.storyboard */,
 			);
 			path = Video;
@@ -627,13 +644,13 @@
 				39D1485423F52D3C0068E105 /* VideoViewController.swift in Sources */,
 				39D1484523F52CA00068E105 /* AccountViewController.swift in Sources */,
 				39AE046D23F82C1B002AAE3E /* SFBaseSectionModel.swift in Sources */,
-				39D1484023F502620068E105 /* LoginViewModelImpl.swift in Sources */,
+				39D1484023F502620068E105 /* SFLoginViewModel.swift in Sources */,
 				39AE046623F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift in Sources */,
-				39D1483F23F502620068E105 /* LoginViewModel.swift in Sources */,
 				39D1484B23F52CF30068E105 /* DiscoverViewController.swift in Sources */,
 				391BFA3123F3E8BB007D8315 /* ViewController.swift in Sources */,
 				39D1485723F52F5C0068E105 /* BindableType.swift in Sources */,
 				39D1482D23F500B90068E105 /* DiscoverCoordinator.swift in Sources */,
+				39818CDB23F9915A0055C2CF /* String+URL.swift in Sources */,
 				39D1483523F501020068E105 /* AccountCoordinator.swift in Sources */,
 				39AE046223F7FD81002AAE3E /* SFCycleScrollView.swift in Sources */,
 				39D1484923F52CB90068E105 /* CloundVillageViewController.swift in Sources */,
@@ -644,10 +661,13 @@
 				39D1483323F500F10068E105 /* CloudVillageCoordinator.swift in Sources */,
 				391BFA2F23F3E8BB007D8315 /* SceneDelegate.swift in Sources */,
 				39D1485923F594E00068E105 /* DiscoverViewModel.swift in Sources */,
+				39818CCB23F950970055C2CF /* SFCycleScrollView1.swift in Sources */,
 				39AE046923F818DC002AAE3E /* SFBaseTableViewCell.swift in Sources */,
 				39AE046423F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift in Sources */,
 				39AE046B23F819BD002AAE3E /* SFBaseCellModel.swift in Sources */,
+				39AE047623F92019002AAE3E /* SFVideoViewModel.swift in Sources */,
 				39D1484123F502620068E105 /* LoginViewController.swift in Sources */,
+				39818CD923F990F80055C2CF /* GitHubAPI.swift in Sources */,
 				39D1482F23F500D90068E105 /* VideoCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

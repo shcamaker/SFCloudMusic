@@ -8,23 +8,45 @@
 
 import UIKit
 
-class VideoViewController: UIViewController {
-
+class VideoViewController: UIViewController, BindableType, CycleScrollViewDelegate {
+    
+    var viewModel: SFVideoViewModel!
+    
+    var cycleView: SFCycleScrollView1!
+    private let images = ["dis_main_cycle1","dis_main_cycle2","dis_main_cycle3","dis_main_cycle4"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        cycleView = SFCycleScrollView1(frame: CGRect.init(x: 0, y: 0, width: view.frame.width, height: 200))
+        cycleView.delegate = self
+        cycleView.rollingEnable = true
+        view.addSubview(cycleView)
+    }
 
-        // Do any additional setup after loading the view.
+    /// 设置图片数量
+    func cycleImageCount() -> Int {
+        return images.count
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    /// 设置显示的图片
+    func cycleImageView(_ imageView: UIImageView, index: Int) {
+        imageView.image = UIImage(named: images[index])
     }
-    */
+    
+    /// 点击图片，返回下标
+    func cycleImageViewClick(_ index: Int) {
+        print(index)
+    }
+    
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        view.backgroundColor = UIColor.white
+//        
+//    }
+//    
 
+    func bindViewModel() {
+        
+    }
 }

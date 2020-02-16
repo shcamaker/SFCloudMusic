@@ -10,6 +10,18 @@ import UIKit
 
 class SFCycleScrollView: UIView {
 
+    private var currentIndex = 0
+    private var nextIndex = 0
+    private var timer:Timer?
+    public var duration: TimeInterval = 3.0
+    
+    private let imageArray = [UIImage(named: "dis_main_cycle1"),UIImage(named: "dis_main_cycle2"),UIImage(named: "dis_main_cycle3"),UIImage(named: "dis_main_cycle4")]
+    enum Direction {
+        case None
+        case Left
+        case Right
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(scrollView)
@@ -22,14 +34,16 @@ class SFCycleScrollView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    private var timer:Timer?
+    
 
     private lazy var scrollView:UIScrollView = {
         let scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height))
         scrollView.contentSize = CGSize(width: self.bounds.width*3, height: 0)
         scrollView.contentOffset = CGPoint(x: self.bounds.width, y: 0)
         scrollView.isPagingEnabled = true
+        scrollView.bounces = false
         scrollView.showsHorizontalScrollIndicator = false
+        scrollView.showsVerticalScrollIndicator = false
         scrollView.delegate = self
         return scrollView
     }()
@@ -49,17 +63,7 @@ class SFCycleScrollView: UIView {
         pageControl.currentPageIndicatorTintColor = UIColor.white
         return pageControl
     }()
-     
-    private let imageArray = [UIImage.init(named: "helper_1"),UIImage.init(named: "helper_2")]
-
-    enum Direction {
-        case None
-        case Left
-        case Right
-    }
     
-    private var currentIndex = 0
-    private var nextIndex = 0
     private var direction:Direction? {
         didSet {
             if direction == .Right {
@@ -85,7 +89,7 @@ class SFCycleScrollView: UIView {
             timer!.invalidate()
             timer = nil
         }
-        timer = Timer(timeInterval: 2, target: self, selector: #selector(nextPage), userInfo: nil, repeats: true)
+        timer = Timer(timeInterval: duration, target: self, selector: #selector(nextPage), userInfo: nil, repeats: true)
         RunLoop.current.add(timer!, forMode: RunLoop.Mode.common)
         
     }
@@ -111,6 +115,9 @@ extension SFCycleScrollView: UIScrollViewDelegate {
         self.currentIndex = self.nextIndex
         currentImageView.image = self.otherImageView.image
         scrollView.contentOffset = CGPoint(x: scrollView.bounds.size.width, y: 0)
+    }
+    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        scrollDidStop()
     }
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         timer?.invalidate()

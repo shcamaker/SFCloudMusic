@@ -20,7 +20,10 @@ class SFBaseTableViewCell: UITableViewCell, BindableType {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        buildUI()
+    }
     func buildUI() { }
     func bindViewModel() { }
 }

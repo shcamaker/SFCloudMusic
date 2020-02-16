@@ -21,14 +21,16 @@ class DiscoverViewController: UIViewController, BindableType {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.register(SFDiscoverCycleScrollCell.self, forCellReuseIdentifier: String(describing: SFDiscoverCycleScrollCell.self))
+        
     }
     
     func bindViewModel() {
         viewModel.items.bind(to: tableView.rx.items) { tv, indexPath, model in
             var cell = tv.dequeueReusableCell(withIdentifier: String(describing: model.cellID)) as? SFBaseTableViewCell
             cell?.bind(to: model)
-            return cell! 
+            return cell!
         }.disposed(by: disposeBag)
     }
 }

@@ -27,7 +27,7 @@ class AppCoordinator: NavigationCoordinator<AppRoute> {
                guard var viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else {
                 return .none()
                }
-               let viewModel = LoginViewModelImpl(router: unownedRouter)
+               let viewModel = SFLoginViewModel(router: unownedRouter)
                viewController.bind(to: viewModel)
                return .push(viewController)
            case .homeTab:
