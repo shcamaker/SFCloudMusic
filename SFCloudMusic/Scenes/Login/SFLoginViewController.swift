@@ -1,5 +1,5 @@
  //
-//  LoginViewController.swift
+//  SFLoginViewController.swift
 //  RXDemo
 //
 //  Created by Alex.Shen on 1/14/20.
@@ -14,7 +14,7 @@ import Action
  private let minimalUsernameLength = 5
  private let minimalPasswordLength = 5
  
-class LoginViewController: UIViewController, BindableType {
+class SFLoginViewController: UIViewController, BindableType {
 
     @IBOutlet weak var usernameTextField: UITextField!
     

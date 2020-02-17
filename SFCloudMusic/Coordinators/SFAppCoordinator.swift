@@ -1,5 +1,5 @@
 //
-//  AppCoordinator.swift
+//  SFAppCoordinator.swift
 //  RXDemo
 //
 //  Created by Alex.Shen on 1/7/20.
@@ -15,7 +15,7 @@ enum AppRoute: Route {
     case homeTab
 }
 
-class AppCoordinator: NavigationCoordinator<AppRoute> {
+class SFAppCoordinator: NavigationCoordinator<AppRoute> {
     init() {
         super.init(initialRoute: .login)
     }
@@ -24,14 +24,14 @@ class AppCoordinator: NavigationCoordinator<AppRoute> {
            switch route {
            case .login:
                let storyboard = UIStoryboard(name: "Main", bundle: nil)
-               guard var viewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else {
+               guard var viewController = storyboard.instantiateViewController(withIdentifier: "SFLoginViewController") as? SFLoginViewController else {
                 return .none()
                }
                let viewModel = SFLoginViewModel(router: unownedRouter)
                viewController.bind(to: viewModel)
                return .push(viewController)
            case .homeTab:
-               return .present(HomeTabCoordinator())
+               return .present(SFHomeTabCoordinator())
         }
     }
             

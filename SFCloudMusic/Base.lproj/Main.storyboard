@@ -10,7 +10,7 @@
         <!--Login View Controller-->
         <scene sceneID="EZj-Dg-Yaa">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="wAa-v3-tPt" customClass="LoginViewController" customModule="SFCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SFLoginViewController" id="wAa-v3-tPt" customClass="SFLoginViewController" customModule="SFCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PvK-AG-ya6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -92,7 +92,7 @@
         <!--Discover View Controller-->
         <scene sceneID="cQ4-h7-dnp">
             <objects>
-                <viewController storyboardIdentifier="DiscoverViewController" id="HMf-Bd-5AE" customClass="DiscoverViewController" customModule="SFCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SFDiscoverViewController" id="HMf-Bd-5AE" customClass="SFDiscoverViewController" customModule="SFCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wdu-vh-IMd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -10,7 +10,7 @@
         <!--Video View Controller-->
         <scene sceneID="eIv-c3-XvE">
             <objects>
-                <viewController storyboardIdentifier="VideoViewController" id="BmG-t1-mfF" customClass="VideoViewController" customModule="RXDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SFVideoViewController" id="BmG-t1-mfF" customClass="SFVideoViewController" customModule="SFCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J7M-Yp-0cH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.082338817420000002" green="0.082361035050000003" blue="0.082337401810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="1bg-4R-zid"/>
                     </view>
                 </viewController>

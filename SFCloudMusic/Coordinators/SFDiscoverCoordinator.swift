@@ -1,5 +1,5 @@
 //
-//  DiscoverCoordinator.swift
+//  SFDiscoverCoordinator.swift
 //  SFCloudMusic
 //
 //  Created by 沈海超 on 2020/2/13.
@@ -15,7 +15,7 @@ enum DiscoverRoute: Route {
 }
 
 
-class DiscoverCoordinator: NavigationCoordinator<DiscoverRoute> {
+class SFDiscoverCoordinator: NavigationCoordinator<DiscoverRoute> {
     override init(rootViewController: NavigationCoordinator<RouteType>.RootViewController = .init(), initialRoute: RouteType? = nil) {
         super.init(rootViewController: rootViewController, initialRoute: nil)
         trigger(.discoverMain)
@@ -25,10 +25,10 @@ class DiscoverCoordinator: NavigationCoordinator<DiscoverRoute> {
            switch route {
            case .discoverMain:
                let storyboard = UIStoryboard(name: "Discover", bundle: nil)
-               guard var viewController = storyboard.instantiateViewController(withIdentifier: "DiscoverViewController") as? DiscoverViewController else {
+               guard var viewController = storyboard.instantiateViewController(withIdentifier: "SFDiscoverViewController") as? SFDiscoverViewController else {
                   return .none()
                }
-               let viewModel = DiscoverViewModel(router: unownedRouter)
+               let viewModel = SFDiscoverViewModel(router: unownedRouter)
                viewController.bind(to: viewModel)
                return .push(viewController)
            }

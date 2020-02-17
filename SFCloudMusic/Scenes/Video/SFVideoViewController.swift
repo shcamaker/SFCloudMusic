@@ -1,5 +1,5 @@
 //
-//  VideoViewController.swift
+//  SFVideoViewController.swift
 //  RXDemo
 //
 //  Created by 沈海超 on 2020/1/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class VideoViewController: UIViewController, BindableType, CycleScrollViewDelegate {
+class SFVideoViewController: UIViewController, BindableType, CycleScrollViewDelegate {
     
     var viewModel: SFVideoViewModel!
     

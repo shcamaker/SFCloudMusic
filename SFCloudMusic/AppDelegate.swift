@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private lazy var mainWindow = UIWindow()
-    private let router = AppCoordinator().strongRouter
+    private let router = SFAppCoordinator().strongRouter
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         configureUI()

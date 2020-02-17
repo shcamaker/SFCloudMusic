@@ -1,5 +1,5 @@
 //
-//  DiscoverViewController.swift
+//  SFDiscoverViewController.swift
 //  SFCloudMusic
 //
 //  Created by 沈海超 on 2020/2/13.
@@ -11,19 +11,20 @@ import RxCocoa
 import RxSwift
 import Action
 
-class DiscoverViewController: UIViewController, BindableType {
+class SFDiscoverViewController: UIViewController, BindableType {
     
     @IBOutlet weak var tableView: UITableView!
     
     private let disposeBag = DisposeBag()
     
-    var viewModel: DiscoverViewModel!
+    var viewModel: SFDiscoverViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 100
         tableView.register(SFDiscoverCycleScrollCell.self, forCellReuseIdentifier: String(describing: SFDiscoverCycleScrollCell.self))
-        
+        tableView.register(SFDiscoverServicesCell.self, forCellReuseIdentifier: String(describing: SFDiscoverServicesCell.self))
     }
     
     func bindViewModel() {

@@ -1,5 +1,5 @@
 //
-//  DiscoverViewModel.swift
+//  SFDiscoverViewModel.swift
 //  SFCloudMusic
 //
 //  Created by 沈海超 on 2020/2/13.
@@ -10,16 +10,15 @@ import Action
 import RxSwift
 import XCoordinator
 
-class DiscoverViewModel: NSObject {
-    var items: Observable<[SFDiscoverCycleScrollCellModel]>
+class SFDiscoverViewModel: NSObject {
+    var items: Observable<[SFBaseCellModel]>
     
     private let router: UnownedRouter<DiscoverRoute>
     
     init(router: UnownedRouter<DiscoverRoute>) {
         self.router = router
-        self.items = Observable.just([SFDiscoverCycleScrollCellModel()])
         
-        
+        self.items = Observable.just([SFDiscoverCycleScrollCellModel(withIdentifier: "SFDiscoverCycleScrollCell")])
     }
     
     

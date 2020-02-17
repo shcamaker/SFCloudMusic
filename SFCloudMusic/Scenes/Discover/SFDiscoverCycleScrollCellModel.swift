@@ -10,5 +10,5 @@ import UIKit
 
 class SFDiscoverCycleScrollCellModel: SFBaseCellModel {
     var name = "Alex"
-    let cellID = "SFDiscoverCycleScrollCell"
+    
 }

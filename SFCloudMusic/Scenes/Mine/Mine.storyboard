@@ -10,7 +10,7 @@
         <!--Mine View Controller-->
         <scene sceneID="SuK-gn-pQG">
             <objects>
-                <viewController storyboardIdentifier="MineViewController" id="Vkd-em-BWe" customClass="MineViewController" customModule="RXDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SFMineViewController" id="Vkd-em-BWe" customClass="SFMineViewController" customModule="SFCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fu2-KZ-bE7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.078417681160000002" green="0.078439243140000003" blue="0.078416295349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="M1i-qE-ife"/>
                     </view>
                 </viewController>

@@ -9,5 +9,8 @@
 import UIKit
 
 class SFBaseCellModel: NSObject {
-
+    var cellID = ""
+    init(withIdentifier cellID: String) {
+        self.cellID = cellID
+    }
 }
