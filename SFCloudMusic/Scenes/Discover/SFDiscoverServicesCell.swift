@@ -13,21 +13,22 @@ class SFDiscoverServicesCell: SFBaseTableViewCell {
 
     @IBOutlet weak var contentStackView: UIStackView!
     
+    @IBOutlet weak var recommandLabel: UILabel!
     private let disposeBag = DisposeBag()
     
     private var cellModel: SFDiscoverServicesCellModel!
     
     override func buildUI() {
-        guard let viewModel = viewModel as? SFDiscoverServicesCellModel else {
-            return
-        }
-        cellModel = viewModel
+        
         
         
     }
 
     override func bindViewModel() {
-        
+        guard let viewModel = viewModel as? SFDiscoverServicesCellModel else {
+            return
+        }
+        cellModel = viewModel
     }
     
 }

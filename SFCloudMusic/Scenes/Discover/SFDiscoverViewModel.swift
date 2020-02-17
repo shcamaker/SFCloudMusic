@@ -18,7 +18,7 @@ class SFDiscoverViewModel: NSObject {
     init(router: UnownedRouter<DiscoverRoute>) {
         self.router = router
         
-        self.items = Observable.just([SFDiscoverCycleScrollCellModel(withIdentifier: "SFDiscoverCycleScrollCell")])
+        self.items = Observable.just([SFDiscoverCycleScrollCellModel(withIdentifier: "SFDiscoverCycleScrollCell"),SFDiscoverServicesCellModel(withIdentifier: "SFDiscoverServicesCell")])
     }
     
     

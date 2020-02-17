@@ -21,10 +21,11 @@ class SFDiscoverViewController: UIViewController, BindableType {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.estimatedRowHeight = 100
+//        tableView.rowHeight = UITableView.automaticDimension
+//        tableView.estimatedRowHeight = 100
         tableView.register(SFDiscoverCycleScrollCell.self, forCellReuseIdentifier: String(describing: SFDiscoverCycleScrollCell.self))
-        tableView.register(SFDiscoverServicesCell.self, forCellReuseIdentifier: String(describing: SFDiscoverServicesCell.self))
+        tableView.register(UINib(nibName: String(describing: SFDiscoverServicesCell.self), bundle: nil), forCellReuseIdentifier: String(describing: SFDiscoverServicesCell.self))
+        
     }
     
     func bindViewModel() {

@@ -15,6 +15,11 @@ class SFDiscoverCycleScrollCell: SFBaseTableViewCell {
     
     override func buildUI() {
         contentView.addSubview(cycleView)
+        cycleView.translatesAutoresizingMaskIntoConstraints = false
+        cycleView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor).isActive = true
+        cycleView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor).isActive = true
+        cycleView.topAnchor.constraint(equalTo: contentView.topAnchor).isActive = true
+        cycleView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor).isActive = true
     }
     
     override func bindViewModel() {
