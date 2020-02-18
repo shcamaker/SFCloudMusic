@@ -216,6 +216,7 @@
 				391BFA5E23F3E92A007D8315 /* Extensions */,
 				391BFA5F23F3E92A007D8315 /* Utils */,
 				39AE046023F7F003002AAE3E /* CustomControl */,
+				393973F623F6A2D800295EAD /* UIImageView+SD.swift */,
 				391BFA2C23F3E8BB007D8315 /* AppDelegate.swift */,
 				391BFA2E23F3E8BB007D8315 /* SceneDelegate.swift */,
 				391BFA3023F3E8BB007D8315 /* ViewController.swift */,
@@ -279,7 +280,6 @@
 				39818CDA23F9915A0055C2CF /* String+URL.swift */,
 				393973F123F67DE800295EAD /* UIColor+UI.swift */,
 				393973F023F67DE600295EAD /* UIImage+UI.swift */,
-				393973F623F6A2D800295EAD /* UIImageView+SD.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
