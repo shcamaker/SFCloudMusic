@@ -26,6 +26,7 @@
 		396715A523FA3FB700956072 /* SFDiscoverServicesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396715A323FA3FB700956072 /* SFDiscoverServicesCell.xib */; };
 		396715A723FA7C6000956072 /* SFDiscoverServicesCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396715A623FA7C6000956072 /* SFDiscoverServicesCellModel.swift */; };
 		396715A923FA7DEA00956072 /* SFDiscoverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396715A823FA7DEA00956072 /* SFDiscoverService.swift */; };
+		396715AD23FB3C6600956072 /* SFAlertKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396715AC23FB3C6600956072 /* SFAlertKit.swift */; };
 		39818CCB23F950970055C2CF /* SFCycleScrollView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39818CCA23F950970055C2CF /* SFCycleScrollView1.swift */; };
 		39818CDB23F9915A0055C2CF /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39818CDA23F9915A0055C2CF /* String+URL.swift */; };
 		39AE046223F7FD81002AAE3E /* SFCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */; };
@@ -108,6 +109,7 @@
 		396715A323FA3FB700956072 /* SFDiscoverServicesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFDiscoverServicesCell.xib; sourceTree = "<group>"; };
 		396715A623FA7C6000956072 /* SFDiscoverServicesCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverServicesCellModel.swift; sourceTree = "<group>"; };
 		396715A823FA7DEA00956072 /* SFDiscoverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverService.swift; sourceTree = "<group>"; };
+		396715AC23FB3C6600956072 /* SFAlertKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAlertKit.swift; sourceTree = "<group>"; };
 		39818CCA23F950970055C2CF /* SFCycleScrollView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCycleScrollView1.swift; sourceTree = "<group>"; };
 		39818CDA23F9915A0055C2CF /* String+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
 		39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCycleScrollView.swift; sourceTree = "<group>"; };
@@ -285,7 +287,7 @@
 		391BFA5F23F3E92A007D8315 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				39D1485623F52F5C0068E105 /* BindableType.swift */,
+				396715AC23FB3C6600956072 /* SFAlertKit.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -302,6 +304,7 @@
 		39AE046723F818B7002AAE3E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				39D1485623F52F5C0068E105 /* BindableType.swift */,
 				39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */,
 				39AE046A23F819BD002AAE3E /* SFBaseCellModel.swift */,
 				39AE046C23F82C1B002AAE3E /* SFBaseSectionModel.swift */,
@@ -656,6 +659,7 @@
 				39D1484523F52CA00068E105 /* SFAccountViewController.swift in Sources */,
 				39AE046D23F82C1B002AAE3E /* SFBaseSectionModel.swift in Sources */,
 				39D1484023F502620068E105 /* SFLoginViewModel.swift in Sources */,
+				396715AD23FB3C6600956072 /* SFAlertKit.swift in Sources */,
 				39AE046623F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift in Sources */,
 				39D1484B23F52CF30068E105 /* SFDiscoverViewController.swift in Sources */,
 				391BFA3123F3E8BB007D8315 /* ViewController.swift in Sources */,
