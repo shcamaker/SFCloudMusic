@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIImage {
-    func toImage(contentInset: UIEdgeInsets) -> UIImage? {
+   public func toImage(contentInset: UIEdgeInsets) -> UIImage? {
         let sourceImageSize = self.size
         let width = sourceImageSize.width + contentInset.left + contentInset.right
         let height = sourceImageSize.height + contentInset.top + contentInset.bottom
@@ -22,7 +22,7 @@ extension UIImage {
         return resultImage
     }
 
-    func toImage(size: CGSize) -> UIImage? {
+   public func toImage(size: CGSize) -> UIImage? {
         var resultImage: UIImage?
         UIGraphicsBeginImageContextWithOptions(size, false, UIScreen.main.scale)
         let sourceImageSize = self.size

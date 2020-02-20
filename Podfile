@@ -1,4 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/shcamaker/SFCloudMusicBaseKitSpec.git'
 
 platform :ios, '9.0'
 
@@ -13,6 +14,8 @@ target 'SFCloudMusic' do
   pod 'XCoordinator/RxSwift'
   pod 'XCoordinator/Combine'
   pod 'SDWebImage'
+  pod 'SFCloudMusicBaseKit/Extensions'
+  pod 'AFNetworking/Serialization'
   
   target 'SFCloudMusicTests' do
     pod 'RxBlocking', '~> 5'

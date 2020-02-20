@@ -19,8 +19,6 @@
 		3927BDE323FA274C00B39866 /* SFMineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927BDE223FA274C00B39866 /* SFMineViewModel.swift */; };
 		3927BDE523FA353A00B39866 /* SFCloundVillageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927BDE423FA353A00B39866 /* SFCloundVillageViewModel.swift */; };
 		3927BDE723FA35F200B39866 /* SFAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927BDE623FA35F200B39866 /* SFAccountViewModel.swift */; };
-		393973F323F67DEA00295EAD /* UIImage+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F023F67DE600295EAD /* UIImage+UI.swift */; };
-		393973F423F67DEA00295EAD /* UIColor+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F123F67DE800295EAD /* UIColor+UI.swift */; };
 		393973F723F6A2D800295EAD /* UIImageView+SD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F623F6A2D800295EAD /* UIImageView+SD.swift */; };
 		396715A423FA3FB700956072 /* SFDiscoverServicesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396715A223FA3FB700956072 /* SFDiscoverServicesCell.swift */; };
 		396715A523FA3FB700956072 /* SFDiscoverServicesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 396715A323FA3FB700956072 /* SFDiscoverServicesCell.xib */; };
@@ -28,7 +26,6 @@
 		396715A923FA7DEA00956072 /* SFDiscoverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396715A823FA7DEA00956072 /* SFDiscoverService.swift */; };
 		396715AD23FB3C6600956072 /* SFAlertKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396715AC23FB3C6600956072 /* SFAlertKit.swift */; };
 		39818CCB23F950970055C2CF /* SFCycleScrollView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39818CCA23F950970055C2CF /* SFCycleScrollView1.swift */; };
-		39818CDB23F9915A0055C2CF /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39818CDA23F9915A0055C2CF /* String+URL.swift */; };
 		39AE046223F7FD81002AAE3E /* SFCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */; };
 		39AE046423F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046323F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift */; };
 		39AE046623F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046523F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift */; };
@@ -102,8 +99,6 @@
 		3927BDE223FA274C00B39866 /* SFMineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFMineViewModel.swift; sourceTree = "<group>"; };
 		3927BDE423FA353A00B39866 /* SFCloundVillageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCloundVillageViewModel.swift; sourceTree = "<group>"; };
 		3927BDE623FA35F200B39866 /* SFAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAccountViewModel.swift; sourceTree = "<group>"; };
-		393973F023F67DE600295EAD /* UIImage+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+UI.swift"; sourceTree = "<group>"; };
-		393973F123F67DE800295EAD /* UIColor+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+UI.swift"; sourceTree = "<group>"; };
 		393973F623F6A2D800295EAD /* UIImageView+SD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SD.swift"; sourceTree = "<group>"; };
 		396715A223FA3FB700956072 /* SFDiscoverServicesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverServicesCell.swift; sourceTree = "<group>"; };
 		396715A323FA3FB700956072 /* SFDiscoverServicesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SFDiscoverServicesCell.xib; sourceTree = "<group>"; };
@@ -111,7 +106,6 @@
 		396715A823FA7DEA00956072 /* SFDiscoverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverService.swift; sourceTree = "<group>"; };
 		396715AC23FB3C6600956072 /* SFAlertKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAlertKit.swift; sourceTree = "<group>"; };
 		39818CCA23F950970055C2CF /* SFCycleScrollView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCycleScrollView1.swift; sourceTree = "<group>"; };
-		39818CDA23F9915A0055C2CF /* String+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
 		39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCycleScrollView.swift; sourceTree = "<group>"; };
 		39AE046323F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverCycleScrollCell.swift; sourceTree = "<group>"; };
 		39AE046523F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverCycleScrollCellModel.swift; sourceTree = "<group>"; };
@@ -213,7 +207,6 @@
 			children = (
 				391BFA5C23F3E929007D8315 /* Coordinators */,
 				391BFA5D23F3E92A007D8315 /* Scenes */,
-				391BFA5E23F3E92A007D8315 /* Extensions */,
 				391BFA5F23F3E92A007D8315 /* Utils */,
 				39AE046023F7F003002AAE3E /* CustomControl */,
 				393973F623F6A2D800295EAD /* UIImageView+SD.swift */,
@@ -272,16 +265,6 @@
 				39D1483823F502310068E105 /* Account */,
 			);
 			path = Scenes;
-			sourceTree = "<group>";
-		};
-		391BFA5E23F3E92A007D8315 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				39818CDA23F9915A0055C2CF /* String+URL.swift */,
-				393973F123F67DE800295EAD /* UIColor+UI.swift */,
-				393973F023F67DE600295EAD /* UIImage+UI.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		391BFA5F23F3E92A007D8315 /* Utils */ = {
@@ -653,8 +636,6 @@
 			files = (
 				39D1482B23F4FA420068E105 /* SFHomeTabCoordinator.swift in Sources */,
 				391BFA6123F3E963007D8315 /* SFAppCoordinator.swift in Sources */,
-				393973F323F67DEA00295EAD /* UIImage+UI.swift in Sources */,
-				393973F423F67DEA00295EAD /* UIColor+UI.swift in Sources */,
 				39D1485423F52D3C0068E105 /* SFVideoViewController.swift in Sources */,
 				39D1484523F52CA00068E105 /* SFAccountViewController.swift in Sources */,
 				39AE046D23F82C1B002AAE3E /* SFBaseSectionModel.swift in Sources */,
@@ -666,7 +647,6 @@
 				39D1485723F52F5C0068E105 /* BindableType.swift in Sources */,
 				3927BDE723FA35F200B39866 /* SFAccountViewModel.swift in Sources */,
 				39D1482D23F500B90068E105 /* SFDiscoverCoordinator.swift in Sources */,
-				39818CDB23F9915A0055C2CF /* String+URL.swift in Sources */,
 				39D1483523F501020068E105 /* SFAccountCoordinator.swift in Sources */,
 				396715A423FA3FB700956072 /* SFDiscoverServicesCell.swift in Sources */,
 				39AE046223F7FD81002AAE3E /* SFCycleScrollView.swift in Sources */,
