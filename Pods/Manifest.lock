@@ -16,7 +16,7 @@ PODS:
   - SDWebImage (5.5.2):
     - SDWebImage/Core (= 5.5.2)
   - SDWebImage/Core (5.5.2)
-  - SFCloudMusicBaseKit/Extensions (0.6.1)
+  - SFCloudMusicBaseKit/Extensions (0.6.2)
   - XCoordinator (2.0.7):
     - XCoordinator/Core (= 2.0.7)
   - XCoordinator/Combine (2.0.7):
@@ -62,7 +62,7 @@ SPEC CHECKSUMS:
   RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   RxTest: 0132f952a61da82d5233abedaa559df91e5330e5
   SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
-  SFCloudMusicBaseKit: c9be74d52bf0b49d481c42c570473863e8f1f30d
+  SFCloudMusicBaseKit: a5f4c85a5d9db8f1b7fa9cbb6e811b99374b0df3
   XCoordinator: 9ee654fedef1ffede33d5c11677708a555c00542
 
 PODFILE CHECKSUM: a6c86d061ca1be36781cf7aa261c680634d613b4
