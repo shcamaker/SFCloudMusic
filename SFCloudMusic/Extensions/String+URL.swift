@@ -6,7 +6,7 @@
 //  Copyright © 2020 沈海超. All rights reserved.
 //
 extension String {
-    var URLEscaped: String {
+    public var URLEscaped: String {
         return self.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? ""
     }
 }

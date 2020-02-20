@@ -10,7 +10,7 @@ import UIKit
 
 extension UIColor {
 
-    static func hex(_ stringToConvert: String, alpha: CGFloat = 1.0) -> UIColor {
+    public static func hex(_ stringToConvert: String, alpha: CGFloat = 1.0) -> UIColor {
         var cstring: String = stringToConvert.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         cstring = cstring.trimmingCharacters(in: CharacterSet(charactersIn: "0X"))
         cstring = cstring.trimmingCharacters(in: CharacterSet(charactersIn: "#"))

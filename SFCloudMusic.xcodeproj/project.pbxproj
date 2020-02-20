@@ -279,7 +279,6 @@
 				39818CDA23F9915A0055C2CF /* String+URL.swift */,
 				393973F123F67DE800295EAD /* UIColor+UI.swift */,
 				393973F023F67DE600295EAD /* UIImage+UI.swift */,
-				393973F623F6A2D800295EAD /* UIImageView+SD.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -295,6 +294,7 @@
 		39AE046023F7F003002AAE3E /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
+				393973F623F6A2D800295EAD /* UIImageView+SD.swift */,
 				39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */,
 				39818CCA23F950970055C2CF /* SFCycleScrollView1.swift */,
 			);
