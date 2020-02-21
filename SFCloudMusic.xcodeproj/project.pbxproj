@@ -25,8 +25,6 @@
 		396715A723FA7C6000956072 /* SFDiscoverServicesCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396715A623FA7C6000956072 /* SFDiscoverServicesCellModel.swift */; };
 		396715A923FA7DEA00956072 /* SFDiscoverService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396715A823FA7DEA00956072 /* SFDiscoverService.swift */; };
 		396715AD23FB3C6600956072 /* SFAlertKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396715AC23FB3C6600956072 /* SFAlertKit.swift */; };
-		39818CCB23F950970055C2CF /* SFCycleScrollView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39818CCA23F950970055C2CF /* SFCycleScrollView1.swift */; };
-		39AE046223F7FD81002AAE3E /* SFCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */; };
 		39AE046423F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046323F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift */; };
 		39AE046623F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046523F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift */; };
 		39AE046923F818DC002AAE3E /* SFBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */; };
@@ -105,8 +103,6 @@
 		396715A623FA7C6000956072 /* SFDiscoverServicesCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverServicesCellModel.swift; sourceTree = "<group>"; };
 		396715A823FA7DEA00956072 /* SFDiscoverService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverService.swift; sourceTree = "<group>"; };
 		396715AC23FB3C6600956072 /* SFAlertKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAlertKit.swift; sourceTree = "<group>"; };
-		39818CCA23F950970055C2CF /* SFCycleScrollView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCycleScrollView1.swift; sourceTree = "<group>"; };
-		39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCycleScrollView.swift; sourceTree = "<group>"; };
 		39AE046323F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverCycleScrollCell.swift; sourceTree = "<group>"; };
 		39AE046523F80D0E002AAE3E /* SFDiscoverCycleScrollCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverCycleScrollCellModel.swift; sourceTree = "<group>"; };
 		39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseTableViewCell.swift; sourceTree = "<group>"; };
@@ -208,7 +204,6 @@
 				391BFA5C23F3E929007D8315 /* Coordinators */,
 				391BFA5D23F3E92A007D8315 /* Scenes */,
 				391BFA5F23F3E92A007D8315 /* Utils */,
-				39AE046023F7F003002AAE3E /* CustomControl */,
 				393973F623F6A2D800295EAD /* UIImageView+SD.swift */,
 				391BFA2C23F3E8BB007D8315 /* AppDelegate.swift */,
 				391BFA2E23F3E8BB007D8315 /* SceneDelegate.swift */,
@@ -273,15 +268,6 @@
 				396715AC23FB3C6600956072 /* SFAlertKit.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		39AE046023F7F003002AAE3E /* CustomControl */ = {
-			isa = PBXGroup;
-			children = (
-				39AE046123F7FD81002AAE3E /* SFCycleScrollView.swift */,
-				39818CCA23F950970055C2CF /* SFCycleScrollView1.swift */,
-			);
-			path = CustomControl;
 			sourceTree = "<group>";
 		};
 		39AE046723F818B7002AAE3E /* Base */ = {
@@ -649,7 +635,6 @@
 				39D1482D23F500B90068E105 /* SFDiscoverCoordinator.swift in Sources */,
 				39D1483523F501020068E105 /* SFAccountCoordinator.swift in Sources */,
 				396715A423FA3FB700956072 /* SFDiscoverServicesCell.swift in Sources */,
-				39AE046223F7FD81002AAE3E /* SFCycleScrollView.swift in Sources */,
 				39D1484923F52CB90068E105 /* SFCloundVillageViewController.swift in Sources */,
 				391BFA2D23F3E8BB007D8315 /* AppDelegate.swift in Sources */,
 				39D1483123F500E50068E105 /* SFMineCoordinator.swift in Sources */,
@@ -659,7 +644,6 @@
 				39D1483323F500F10068E105 /* SFCloudVillageCoordinator.swift in Sources */,
 				391BFA2F23F3E8BB007D8315 /* SceneDelegate.swift in Sources */,
 				39D1485923F594E00068E105 /* SFDiscoverViewModel.swift in Sources */,
-				39818CCB23F950970055C2CF /* SFCycleScrollView1.swift in Sources */,
 				39AE046923F818DC002AAE3E /* SFBaseTableViewCell.swift in Sources */,
 				3927BDE323FA274C00B39866 /* SFMineViewModel.swift in Sources */,
 				396715A923FA7DEA00956072 /* SFDiscoverService.swift in Sources */,

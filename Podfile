@@ -15,6 +15,8 @@ target 'SFCloudMusic' do
   pod 'XCoordinator/Combine'
   pod 'SDWebImage'
   pod 'SFCloudMusicBaseKit/Extensions'
+  pod 'SFCloudMusicFunctionKit'
+  
   pod 'AFNetworking/Serialization'
   
   target 'SFCloudMusicTests' do

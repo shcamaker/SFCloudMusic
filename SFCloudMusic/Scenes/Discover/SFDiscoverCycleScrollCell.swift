@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SFCloudMusicFunctionKit
 class SFDiscoverCycleScrollCell: SFBaseTableViewCell {
     
     

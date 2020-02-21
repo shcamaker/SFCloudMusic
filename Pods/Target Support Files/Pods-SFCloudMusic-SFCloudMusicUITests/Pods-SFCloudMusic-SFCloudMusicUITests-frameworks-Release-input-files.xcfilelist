@@ -6,4 +6,5 @@ ${BUILT_PRODUCTS_DIR}/RxRelay/RxRelay.framework
 ${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework
 ${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
 ${BUILT_PRODUCTS_DIR}/SFCloudMusicBaseKit/SFCloudMusicBaseKit.framework
+${BUILT_PRODUCTS_DIR}/SFCloudMusicFunctionKit/SFCloudMusicFunctionKit.framework
 ${BUILT_PRODUCTS_DIR}/XCoordinator/XCoordinator.framework

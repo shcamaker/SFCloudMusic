@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SFCloudMusicFunctionKit
 class SFVideoViewController: UIViewController, BindableType, CycleScrollViewDelegate {
     
     var viewModel: SFVideoViewModel!
