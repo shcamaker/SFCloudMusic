@@ -9,7 +9,7 @@
 import UIKit
 
 /// 代理方法
-@objc protocol CycleScrollViewDelegate: NSObjectProtocol {
+@objc public protocol CycleScrollViewDelegate: NSObjectProtocol {
     
     /// 有多少图片
     func cycleImageCount() -> Int
@@ -22,7 +22,7 @@ import UIKit
 }
 
 /// 轮播图
-class SFCycleScrollView1: UIView, UIScrollViewDelegate {
+public class SFCycleScrollView1: UIView, UIScrollViewDelegate {
 
     /// 图片数组
     fileprivate var imageViews = [UIImageView(), UIImageView(), UIImageView()]
@@ -71,7 +71,7 @@ class SFCycleScrollView1: UIView, UIScrollViewDelegate {
     }
     
     /// 初始化
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         
         scrollView = UIScrollView()
@@ -90,7 +90,7 @@ class SFCycleScrollView1: UIView, UIScrollViewDelegate {
     }
     
     /// 设置
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         if (imageViews[0].frame == .zero) {
             let width = frame.width, height = frame.height
@@ -126,7 +126,7 @@ class SFCycleScrollView1: UIView, UIScrollViewDelegate {
             return
         }
         timer = Timer.scheduledTimer(timeInterval: duration, target: self, selector: #selector(rolling), userInfo: nil, repeats: true)
-        RunLoop.current.add(timer!, forMode: .common)
+        RunLoop.current.add(timer!, forMode: RunLoop.Mode.common)
     }
     
     /// 暂停计时器
@@ -144,21 +144,21 @@ class SFCycleScrollView1: UIView, UIScrollViewDelegate {
     }
     
     /// scrollView开始拖拽
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         if rollingEnable {
             stopTimer()
         }
     }
     
     /// scrollView结束拖拽
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if rollingEnable {
             startTimer()
         }
     }
     
     /// scrollView滚动
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView.contentOffset.x <= 0 {
             currentIndex = getLast(currentIndex)
         } else if scrollView.contentOffset.x >= 2 * scrollView.frame.width {
@@ -189,12 +189,12 @@ class SFCycleScrollView1: UIView, UIScrollViewDelegate {
     }
     
     /// 如果有计时器存在，必须停止计时器才能释放
-    override func removeFromSuperview() {
+    override public func removeFromSuperview() {
         super.removeFromSuperview()
         stopTimer()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+   public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
 }

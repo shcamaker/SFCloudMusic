@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SFCycleScrollView: UIView {
+public class SFCycleScrollView: UIView {
 
     private var currentIndex = 0
     private var nextIndex = 0
@@ -22,7 +22,7 @@ class SFCycleScrollView: UIView {
         case Right
     }
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(scrollView)
         scrollView.addSubview(currentImageView)
@@ -31,7 +31,7 @@ class SFCycleScrollView: UIView {
         startTimer()
     }
     
-    required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -81,7 +81,7 @@ class SFCycleScrollView: UIView {
         }
     }
     
-    func startTimer() {
+    private func startTimer() {
         if imageArray.count == 1 {
             return
         }
@@ -94,17 +94,17 @@ class SFCycleScrollView: UIView {
         
     }
     
-    @objc func nextPage () {
+    @objc private func nextPage () {
         scrollView.setContentOffset(CGPoint(x: scrollView.bounds.width*2, y: 0), animated: true)
     }
     
 }
 
 extension SFCycleScrollView: UIScrollViewDelegate {
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         direction = scrollView.contentOffset.x > UIScreen.main.bounds.width-30 ? .Left : .Right
     }
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         scrollDidStop()
     }
     private func scrollDidStop() {
@@ -116,14 +116,14 @@ extension SFCycleScrollView: UIScrollViewDelegate {
         currentImageView.image = self.otherImageView.image
         scrollView.contentOffset = CGPoint(x: scrollView.bounds.size.width, y: 0)
     }
-    func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+    public func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         scrollDidStop()
     }
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         timer?.invalidate()
     }
     
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         startTimer()
     }
 }
