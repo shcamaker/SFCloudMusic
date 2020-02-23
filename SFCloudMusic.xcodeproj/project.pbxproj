@@ -51,6 +51,10 @@
 		39D1485523F52D3C0068E105 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D1485323F52D3C0068E105 /* Video.storyboard */; };
 		39D1485723F52F5C0068E105 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1485623F52F5C0068E105 /* BindableType.swift */; };
 		39D1485923F594E00068E105 /* SFDiscoverViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1485823F594E00068E105 /* SFDiscoverViewModel.swift */; };
+		39E4F686240292A30018B114 /* Target_Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F685240292A30018B114 /* Target_Login.swift */; };
+		39E4F68A2402986E0018B114 /* CTMediator+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F6892402986E0018B114 /* CTMediator+Login.swift */; };
+		39E4F68E2402BB070018B114 /* A_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F68D2402BB070018B114 /* A_Extension.swift */; };
+		39E4F6982402C4FC0018B114 /* Target_A.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F6972402C4FB0018B114 /* Target_A.swift */; };
 		723D682B6DD86A85A4D4E167 /* Pods_SFCloudMusic_SFCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F86953DFA63DF725446EAD /* Pods_SFCloudMusic_SFCloudMusicTests.framework */; };
 		7B935185115152E6A2DAA985 /* Pods_SFCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03149FC307EA6E816DBD222A /* Pods_SFCloudMusic.framework */; };
 		E517E7C397BEAEA22DEF7E8F /* Pods_SFCloudMusic_SFCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A321410D8C7ED30627969CD /* Pods_SFCloudMusic_SFCloudMusicUITests.framework */; };
@@ -129,6 +133,10 @@
 		39D1485323F52D3C0068E105 /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
 		39D1485623F52F5C0068E105 /* BindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
 		39D1485823F594E00068E105 /* SFDiscoverViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverViewModel.swift; sourceTree = "<group>"; };
+		39E4F685240292A30018B114 /* Target_Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Target_Login.swift; sourceTree = "<group>"; };
+		39E4F6892402986E0018B114 /* CTMediator+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CTMediator+Login.swift"; sourceTree = "<group>"; };
+		39E4F68D2402BB070018B114 /* A_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = A_Extension.swift; sourceTree = "<group>"; };
+		39E4F6972402C4FB0018B114 /* Target_A.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Target_A.swift; sourceTree = "<group>"; };
 		68FADECB5E0E06EDB63C4BF2 /* Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicTests/Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig"; sourceTree = "<group>"; };
 		96F86953DFA63DF725446EAD /* Pods_SFCloudMusic_SFCloudMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFCloudMusic_SFCloudMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A489081DB43354771847AD9 /* Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicUITests/Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +211,7 @@
 			children = (
 				391BFA5C23F3E929007D8315 /* Coordinators */,
 				391BFA5D23F3E92A007D8315 /* Scenes */,
+				39E4F687240295F60018B114 /* Mediator */,
 				391BFA5F23F3E92A007D8315 /* Utils */,
 				393973F623F6A2D800295EAD /* UIImageView+SD.swift */,
 				391BFA2C23F3E8BB007D8315 /* AppDelegate.swift */,
@@ -316,6 +325,8 @@
 			children = (
 				39D1483E23F502620068E105 /* SFLoginViewController.swift */,
 				39D1483D23F502620068E105 /* SFLoginViewModel.swift */,
+				39E4F685240292A30018B114 /* Target_Login.swift */,
+				39E4F6972402C4FB0018B114 /* Target_A.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -344,6 +355,23 @@
 				39D1484C23F52D1C0068E105 /* Discover.storyboard */,
 			);
 			path = Discover;
+			sourceTree = "<group>";
+		};
+		39E4F687240295F60018B114 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				39E4F6882402982D0018B114 /* LoginKitExtension */,
+			);
+			path = Mediator;
+			sourceTree = "<group>";
+		};
+		39E4F6882402982D0018B114 /* LoginKitExtension */ = {
+			isa = PBXGroup;
+			children = (
+				39E4F68D2402BB070018B114 /* A_Extension.swift */,
+				39E4F6892402986E0018B114 /* CTMediator+Login.swift */,
+			);
+			path = LoginKitExtension;
 			sourceTree = "<group>";
 		};
 		67E3ADBA2FD539F56FDBDB0A /* Frameworks */ = {
@@ -431,6 +459,7 @@
 				TargetAttributes = {
 					391BFA2823F3E8BB007D8315 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
 					};
 					391BFA3E23F3E8BC007D8315 = {
 						CreatedOnToolsVersion = 11.3;
@@ -622,6 +651,7 @@
 			files = (
 				39D1482B23F4FA420068E105 /* SFHomeTabCoordinator.swift in Sources */,
 				391BFA6123F3E963007D8315 /* SFAppCoordinator.swift in Sources */,
+				39E4F6982402C4FC0018B114 /* Target_A.swift in Sources */,
 				39D1485423F52D3C0068E105 /* SFVideoViewController.swift in Sources */,
 				39D1484523F52CA00068E105 /* SFAccountViewController.swift in Sources */,
 				39AE046D23F82C1B002AAE3E /* SFBaseSectionModel.swift in Sources */,
@@ -632,11 +662,13 @@
 				391BFA3123F3E8BB007D8315 /* ViewController.swift in Sources */,
 				39D1485723F52F5C0068E105 /* BindableType.swift in Sources */,
 				3927BDE723FA35F200B39866 /* SFAccountViewModel.swift in Sources */,
+				39E4F686240292A30018B114 /* Target_Login.swift in Sources */,
 				39D1482D23F500B90068E105 /* SFDiscoverCoordinator.swift in Sources */,
 				39D1483523F501020068E105 /* SFAccountCoordinator.swift in Sources */,
 				396715A423FA3FB700956072 /* SFDiscoverServicesCell.swift in Sources */,
 				39D1484923F52CB90068E105 /* SFCloundVillageViewController.swift in Sources */,
 				391BFA2D23F3E8BB007D8315 /* AppDelegate.swift in Sources */,
+				39E4F68E2402BB070018B114 /* A_Extension.swift in Sources */,
 				39D1483123F500E50068E105 /* SFMineCoordinator.swift in Sources */,
 				39D1485023F52D290068E105 /* SFMineViewController.swift in Sources */,
 				393973F723F6A2D800295EAD /* UIImageView+SD.swift in Sources */,
@@ -647,6 +679,7 @@
 				39AE046923F818DC002AAE3E /* SFBaseTableViewCell.swift in Sources */,
 				3927BDE323FA274C00B39866 /* SFMineViewModel.swift in Sources */,
 				396715A923FA7DEA00956072 /* SFDiscoverService.swift in Sources */,
+				39E4F68A2402986E0018B114 /* CTMediator+Login.swift in Sources */,
 				39AE046423F80CB4002AAE3E /* SFDiscoverCycleScrollCell.swift in Sources */,
 				396715A723FA7C6000956072 /* SFDiscoverServicesCellModel.swift in Sources */,
 				39AE046B23F819BD002AAE3E /* SFBaseCellModel.swift in Sources */,
@@ -741,6 +774,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -801,6 +835,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -826,7 +861,9 @@
 			baseConfigurationReference = 33B5BEE59155A7227F92179C /* Pods-SFCloudMusic.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = CM22YAGS99;
 				INFOPLIST_FILE = SFCloudMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -835,6 +872,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenhaichao.SFCloudMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -845,7 +884,9 @@
 			baseConfigurationReference = 0DEC6FF4E0EB3EA4FFB298E8 /* Pods-SFCloudMusic.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = CM22YAGS99;
 				INFOPLIST_FILE = SFCloudMusic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -854,6 +895,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shenhaichao.SFCloudMusic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

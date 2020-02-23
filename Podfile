@@ -18,7 +18,7 @@ target 'SFCloudMusic' do
   pod 'SFCloudMusicFunctionKit'
   
   pod 'AFNetworking/Serialization'
-  
+  pod 'CTMediator'
   target 'SFCloudMusicTests' do
     pod 'RxBlocking', '~> 5'
     pod 'RxTest', '~> 5'

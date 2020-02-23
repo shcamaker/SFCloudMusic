@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SFCloudMusicBaseKit
+
 
 class ViewController: UIViewController {
 
