@@ -14,8 +14,11 @@ target 'SFCloudMusic' do
   pod 'XCoordinator/RxSwift'
   pod 'XCoordinator/Combine'
   pod 'SDWebImage'
+  
   pod 'SFCloudMusicBaseKit/Extensions'
   pod 'SFCloudMusicFunctionKit'
+  pod 'SFCloudMusicLoginKit', '~> 0.5.3'
+  pod 'SFCloudMusicDiscoverKit'
   
   pod 'AFNetworking/Serialization'
   pod 'CTMediator'

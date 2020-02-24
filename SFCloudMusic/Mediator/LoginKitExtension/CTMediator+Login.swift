@@ -7,16 +7,16 @@
 //
 
 import CTMediator
-import RxSwift
 
-let loginTargetName = "Login"
-let loginViewControllerActionName = "loginViewController"
+private let loginKitName = "SFCloudMusicLoginKit"
+private let loginTargetName = "Login"
+private let loginViewControllerActionName = "loginViewController"
 
-extension CTMediator {
-   @objc public func loginViewController(loginBlock: Any) -> UIViewController? {
-        let params = ["callback" : loginBlock] as [AnyHashable:Any]
+public extension CTMediator {
+    func loginViewController(loginBlock: Any) -> UIViewController? {
+        let params = ["callback" : loginBlock,
+        kCTMediatorParamsKeySwiftTargetModuleName:loginKitName] as [AnyHashable:Any]
          let viewController = self.performTarget(loginTargetName, action: loginViewControllerActionName, params: params, shouldCacheTarget: false) as? UIViewController
-    
         return viewController
     }
     

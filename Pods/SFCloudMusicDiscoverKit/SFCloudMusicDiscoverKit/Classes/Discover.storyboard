@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment version="2352" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -9,13 +11,13 @@
         <!--Discover View Controller-->
         <scene sceneID="tjR-Er-lEW">
             <objects>
-                <viewController storyboardIdentifier="SFDiscoverViewController" id="xck-tD-7ju" customClass="SFDiscoverViewController" customModule="SFCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SFDiscoverViewController" id="xck-tD-7ju" customClass="SFDiscoverViewController" customModule="SFCloudMusicDiscoverKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iq7-pp-Uml">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYI-W5-csR">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLb-eh-b9u">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -28,11 +30,11 @@
                                         </state>
                                     </button>
                                     <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" placeholder="请输入歌名歌手" translatesAutoresizingMaskIntoConstraints="NO" id="rUe-Jn-HGx">
-                                        <rect key="frame" x="50" y="0.0" width="500" height="50"/>
+                                        <rect key="frame" x="50" y="0.0" width="314" height="50"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZF-7g-eeD">
-                                        <rect key="frame" x="550" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="364" y="0.0" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="2b0-Vy-eEv"/>
                                         </constraints>
@@ -46,7 +48,7 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="puQ-Gi-8n7">
-                                <rect key="frame" x="16" y="58" width="568" height="542"/>
+                                <rect key="frame" x="16" y="102" width="382" height="760"/>
                                 <color key="backgroundColor" red="0.078417681160000002" green="0.078439243140000003" blue="0.078416295349999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </tableView>
                         </subviews>

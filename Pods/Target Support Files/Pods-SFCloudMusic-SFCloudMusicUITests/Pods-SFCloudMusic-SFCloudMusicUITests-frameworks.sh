@@ -169,7 +169,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCloudMusicBaseKit/SFCloudMusicBaseKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SFCloudMusicDiscoverKit/SFCloudMusicDiscoverKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCloudMusicFunctionKit/SFCloudMusicFunctionKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SFCloudMusicLoginKit/SFCloudMusicLoginKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/XCoordinator/XCoordinator.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -181,7 +183,9 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCloudMusicBaseKit/SFCloudMusicBaseKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SFCloudMusicDiscoverKit/SFCloudMusicDiscoverKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/SFCloudMusicFunctionKit/SFCloudMusicFunctionKit.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SFCloudMusicLoginKit/SFCloudMusicLoginKit.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/XCoordinator/XCoordinator.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
