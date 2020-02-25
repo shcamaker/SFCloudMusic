@@ -16,9 +16,9 @@ target 'SFCloudMusic' do
   pod 'SDWebImage'
   
   pod 'SFCloudMusicBaseKit/Extensions'
-  pod 'SFCloudMusicFunctionKit'
+#  pod 'SFCloudMusicFunctionKit'
   pod 'SFCloudMusicLoginKit', '~> 0.5.3'
-  pod 'SFCloudMusicDiscoverKit'
+  pod 'SFCloudMusicDiscoverKit', '~> 0.2.6'
   
   pod 'AFNetworking/Serialization'
   pod 'CTMediator'

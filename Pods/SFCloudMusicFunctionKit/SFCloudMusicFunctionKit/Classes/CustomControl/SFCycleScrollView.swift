@@ -15,7 +15,15 @@ public class SFCycleScrollView: UIView {
     private var timer:Timer?
     public var duration: TimeInterval = 3.0
     
-    private let imageArray = [UIImage(named: "dis_main_cycle1"),UIImage(named: "dis_main_cycle2"),UIImage(named: "dis_main_cycle3"),UIImage(named: "dis_main_cycle4")]
+    public var imageArray: [UIImage]? {
+        didSet {
+            currentImageView.image = self.imageArray?[0]
+            pageControl.numberOfPages = self.imageArray?.count ?? 0
+            startTimer()
+        }
+    }
+    
+    
     enum Direction {
         case None
         case Left
@@ -28,8 +36,8 @@ public class SFCycleScrollView: UIView {
         scrollView.addSubview(currentImageView)
         scrollView.addSubview(otherImageView)
         addSubview(pageControl)
-        startTimer()
     }
+
     
     public required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -50,7 +58,6 @@ public class SFCycleScrollView: UIView {
     
     private lazy var currentImageView:UIImageView = {
         let currentImageView = UIImageView(frame: CGRect(x: self.bounds.width, y: 0, width: self.bounds.width, height: self.bounds.height))
-        currentImageView.image = self.imageArray[0]
         return currentImageView
     }()
     
@@ -58,7 +65,6 @@ public class SFCycleScrollView: UIView {
     
     private lazy var pageControl:UIPageControl = {
         let pageControl = UIPageControl(frame: CGRect(x: self.bounds.width/2-30, y: self.scrollView.frame.maxY, width: 60, height: 15))
-        pageControl.numberOfPages = self.imageArray.count
         pageControl.pageIndicatorTintColor = UIColor.gray
         pageControl.currentPageIndicatorTintColor = UIColor.white
         return pageControl
@@ -70,19 +76,19 @@ public class SFCycleScrollView: UIView {
                 otherImageView.frame = CGRect(x: 0, y: 0, width: self.scrollView.bounds.size.width, height: self.scrollView.bounds.size.height)
                 self.nextIndex = self.currentIndex - 1
                 if self.nextIndex < 0 {
-                    self.nextIndex = imageArray.count - 1
+                    self.nextIndex = imageArray!.count - 1
                 }
             } else if direction == .Left {
                 self.otherImageView.frame = CGRect(x: currentImageView.frame.maxX, y: 0, width: self.scrollView.bounds.size.width, height: self.scrollView.bounds.size.height)
-                self.nextIndex = (self.currentIndex + 1)%imageArray.count
+                self.nextIndex = (self.currentIndex + 1)%imageArray!.count
             }
-            self.otherImageView.image = self.imageArray[self.nextIndex]
+            self.otherImageView.image = self.imageArray![self.nextIndex]
             pageControl.currentPage = currentIndex
         }
     }
     
     private func startTimer() {
-        if imageArray.count == 1 {
+        if imageArray?.count == 1 {
             return
         }
         if timer != nil {
