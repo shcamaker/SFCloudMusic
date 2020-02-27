@@ -8,7 +8,8 @@
 
 import UIKit
 import XCoordinator
-
+import RxSwift
+import CTMediator
 
 enum AppRoute: Route {
     case login
@@ -23,13 +24,13 @@ class SFAppCoordinator: NavigationCoordinator<AppRoute> {
     override func prepareTransition(for route: AppRoute) -> NavigationTransition {
            switch route {
            case .login:
-               let storyboard = UIStoryboard(name: "Main", bundle: nil)
-               guard var viewController = storyboard.instantiateViewController(withIdentifier: "SFLoginViewController") as? SFLoginViewController else {
-                return .none()
-               }
-               let viewModel = SFLoginViewModel(router: unownedRouter)
-               viewController.bind(to: viewModel)
-               return .push(viewController)
+                let viewController = CTMediator.sharedInstance()?.loginViewController { [unowned self] in
+                    self.unownedRouter.rx.trigger(.homeTab)
+                }
+                guard let loginVC = viewController else {
+                    return .none()
+                }
+               return .push(loginVC)
            case .homeTab:
                return .present(SFHomeTabCoordinator())
         }

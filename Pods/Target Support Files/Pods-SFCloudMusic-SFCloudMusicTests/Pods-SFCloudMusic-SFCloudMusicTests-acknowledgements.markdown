@@ -27,6 +27,11 @@ SOFTWARE.
 
 
 
+## CTMediator
+
+MIT
+
+
 ## RxCocoa
 
 **The MIT License**

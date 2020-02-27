@@ -8,7 +8,7 @@
 
 import UIKit
 import XCoordinator
-
+import CTMediator
 
 enum VideoRoute: Route {
     case videoMain
@@ -22,12 +22,9 @@ class SFVideoCoordinator: NavigationCoordinator<VideoRoute> {
     override func prepareTransition(for route: VideoRoute) -> NavigationTransition {
            switch route {
            case .videoMain:
-               let storyboard = UIStoryboard(name: "Video", bundle: nil)
-               guard var viewController = storyboard.instantiateViewController(withIdentifier: "SFVideoViewController") as? SFVideoViewController else {
-                  return .none()
+               guard let viewController = CTMediator.sharedInstance()?.videoViewController() else {
+                   return .none()
                }
-               let viewModel = SFVideoViewModel(router: unownedRouter)
-               viewController.bind(to: viewModel)
                return .push(viewController)
            }
        }

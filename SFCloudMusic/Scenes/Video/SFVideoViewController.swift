@@ -8,43 +8,28 @@
 
 import UIKit
 
-class SFVideoViewController: UIViewController, BindableType, CycleScrollViewDelegate {
+class SFVideoViewController: UIViewController, BindableType {
     
     var viewModel: SFVideoViewModel!
     
-    var cycleView: SFCycleScrollView1!
-    private let images = ["dis_main_cycle1","dis_main_cycle2","dis_main_cycle3","dis_main_cycle4"]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        cycleView = SFCycleScrollView1(frame: CGRect.init(x: 0, y: 0, width: view.frame.width, height: 200))
-        cycleView.delegate = self
-        cycleView.rollingEnable = true
-        view.addSubview(cycleView)
+//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 150))
+//        imageView.image = imagePath(imageName: "dis_main_cycle1", imageFormat: "png")
+//        view.addSubview(imageView)
     }
 
-    /// 设置图片数量
-    func cycleImageCount() -> Int {
-        return images.count
+    func imagePath(imageName: String, imageFormat: String) -> UIImage{
+        let bundle = Bundle(for: SFVideoViewController.self)
+        let fullImageName = "\(imageName)@2x.\(imageFormat)"
+        guard let path  = bundle.path(forResource: fullImageName, ofType: nil, inDirectory: "SFCloudMusicFunctionKit.bundle"), let image  = UIImage(contentsOfFile: path) else {
+            return UIImage()
+        }
+        return image
     }
-    
-    /// 设置显示的图片
-    func cycleImageView(_ imageView: UIImageView, index: Int) {
-        imageView.image = UIImage(named: images[index])
-    }
-    
-    /// 点击图片，返回下标
-    func cycleImageViewClick(_ index: Int) {
-        print(index)
-    }
-    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        view.backgroundColor = UIColor.white
-//        
-//    }
-//    
 
     func bindViewModel() {
         

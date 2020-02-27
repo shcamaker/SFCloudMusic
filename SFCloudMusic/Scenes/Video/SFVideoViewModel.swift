@@ -8,13 +8,10 @@
 
 import Action
 import RxSwift
-import XCoordinator
 
 class SFVideoViewModel: NSObject {
-    private let router: UnownedRouter<VideoRoute>
     
-    init(router: UnownedRouter<VideoRoute>) {
-        self.router = router
+    override init() {
         
     }
 }

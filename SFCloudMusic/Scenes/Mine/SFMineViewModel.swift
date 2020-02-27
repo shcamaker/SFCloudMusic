@@ -8,13 +8,10 @@
 
 import Action
 import RxSwift
-import XCoordinator
+
 
 class SFMineViewModel: NSObject {
-    private let router: UnownedRouter<MineRoute>
-    
-    init(router: UnownedRouter<MineRoute>) {
-        self.router = router
+    override init() {
         
     }
 }

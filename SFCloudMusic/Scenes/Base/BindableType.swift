@@ -21,7 +21,12 @@ protocol BindableType {
 extension BindableType where Self: UIViewController {
     mutating func bind(to model: Self.ViewModelType) {
         viewModel = model
-        loadViewIfNeeded()
+        if #available(iOS 9.0, *) {
+            loadViewIfNeeded()
+        } else {
+            // Fallback on earlier versions
+        }
+        
         bindViewModel()
     }
 }

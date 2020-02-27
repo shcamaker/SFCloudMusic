@@ -8,6 +8,7 @@
 
 import UIKit
 import XCoordinator
+import CTMediator
 
 enum CloudVillageRoute: Route {
     case cloudVillageMain
@@ -21,12 +22,9 @@ class SFCloudVillageCoordinator: NavigationCoordinator<CloudVillageRoute> {
     override func prepareTransition(for route: CloudVillageRoute) -> NavigationTransition {
            switch route {
            case .cloudVillageMain:
-               let storyboard = UIStoryboard(name: "CloudVillage", bundle: nil)
-               guard var viewController = storyboard.instantiateViewController(withIdentifier: "SFCloundVillageViewController") as? SFCloundVillageViewController else {
-                  return .none()
+               guard let viewController = CTMediator.sharedInstance()?.cloudVillageViewController() else {
+                   return .none()
                }
-               let viewModel = SFCloundVillageViewModel(router: unownedRouter)
-               viewController.bind(to: viewModel)
                return .push(viewController)
            }
        }

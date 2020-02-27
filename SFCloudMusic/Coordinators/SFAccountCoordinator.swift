@@ -8,6 +8,7 @@
 
 import UIKit
 import XCoordinator
+import CTMediator
 
 enum AccountRoute: Route {
     case accountMain
@@ -21,12 +22,9 @@ class SFAccountCoordinator: NavigationCoordinator<AccountRoute> {
     override func prepareTransition(for route: AccountRoute) -> NavigationTransition {
            switch route {
            case .accountMain:
-               let storyboard = UIStoryboard(name: "Account", bundle: nil)
-               guard var viewController = storyboard.instantiateViewController(withIdentifier: "SFAccountViewController") as? SFAccountViewController else {
-                  return .none()
+               guard let viewController = CTMediator.sharedInstance()?.accountViewController() else {
+                   return .none()
                }
-               let viewModel = SFAccountViewModel(router: unownedRouter)
-               viewController.bind(to: viewModel)
                return .push(viewController)
            }
        }

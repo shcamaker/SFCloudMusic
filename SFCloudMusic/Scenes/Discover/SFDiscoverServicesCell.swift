@@ -9,6 +9,7 @@
 import UIKit
 import RxSwift
 
+@available(iOS 9.0, *)
 class SFDiscoverServicesCell: SFBaseTableViewCell {
 
     @IBOutlet weak var contentStackView: UIStackView!

@@ -8,15 +8,11 @@
 
 import Action
 import RxSwift
-import XCoordinator
 
 class SFDiscoverViewModel: NSObject {
     var items: Observable<[SFBaseCellModel]>
     
-    private let router: UnownedRouter<DiscoverRoute>
-    
-    init(router: UnownedRouter<DiscoverRoute>) {
-        self.router = router
+    override init() {
         
         self.items = Observable.just([SFDiscoverCycleScrollCellModel(withIdentifier: "SFDiscoverCycleScrollCell"),SFDiscoverServicesCellModel(withIdentifier: "SFDiscoverServicesCell")])
     }

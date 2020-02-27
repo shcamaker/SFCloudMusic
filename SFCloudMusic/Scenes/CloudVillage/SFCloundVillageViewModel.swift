@@ -8,13 +8,9 @@
 
 import Action
 import RxSwift
-import XCoordinator
 
 class SFCloundVillageViewModel: NSObject {
-    private let router: UnownedRouter<CloudVillageRoute>
-    
-    init(router: UnownedRouter<CloudVillageRoute>) {
-        self.router = router
+    override init() {
         
     }
 }

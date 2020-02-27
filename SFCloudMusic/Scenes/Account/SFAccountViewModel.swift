@@ -8,13 +8,11 @@
 
 import Action
 import RxSwift
-import XCoordinator
+
 
 class SFAccountViewModel: NSObject {
-    private let router: UnownedRouter<AccountRoute>
     
-    init(router: UnownedRouter<AccountRoute>) {
-        self.router = router
+    override init() {
         
     }
 }

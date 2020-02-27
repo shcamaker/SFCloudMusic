@@ -8,18 +8,18 @@
 
 import Action
 import RxSwift
-import XCoordinator
 
 class SFLoginViewModel: NSObject {
     private(set) lazy var loginTrigger = loginAction.inputs
-    private let router: UnownedRouter<AppRoute>
+    
+    var loginBlock:(() -> (Observable<Void>))
     
     private lazy var loginAction = CocoaAction { [unowned self] in
-        self.router.rx.trigger(.homeTab)
+        self.loginBlock()
     }
     
-    init(router: UnownedRouter<AppRoute>) {
-        self.router = router
+    init(loginBlock: @escaping () -> (Observable<Void>)) {
+        self.loginBlock = loginBlock
     }
 
 }

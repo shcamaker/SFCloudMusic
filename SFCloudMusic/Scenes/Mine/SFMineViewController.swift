@@ -14,7 +14,7 @@ class SFMineViewController: UIViewController, BindableType {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
     }
     

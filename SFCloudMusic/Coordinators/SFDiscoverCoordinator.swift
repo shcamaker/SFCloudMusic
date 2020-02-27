@@ -8,6 +8,7 @@
 
 import UIKit
 import XCoordinator
+import CTMediator
 
 enum DiscoverRoute: Route {
     case discoverMain
@@ -24,12 +25,9 @@ class SFDiscoverCoordinator: NavigationCoordinator<DiscoverRoute> {
     override func prepareTransition(for route: DiscoverRoute) -> NavigationTransition {
            switch route {
            case .discoverMain:
-               let storyboard = UIStoryboard(name: "Discover", bundle: nil)
-               guard var viewController = storyboard.instantiateViewController(withIdentifier: "SFDiscoverViewController") as? SFDiscoverViewController else {
-                  return .none()
+               guard let viewController = CTMediator.sharedInstance()?.discoverViewController() else {
+                   return .none()
                }
-               let viewModel = SFDiscoverViewModel(router: unownedRouter)
-               viewController.bind(to: viewModel)
                return .push(viewController)
            }
        }
