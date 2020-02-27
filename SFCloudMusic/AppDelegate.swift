@@ -7,16 +7,16 @@
 //
 
 import UIKit
+import SFCloudMusicMediatorKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     private lazy var mainWindow = UIWindow()
-    private let router = SFAppCoordinator().strongRouter
-
+    private lazy var appMediator = SFMediator()
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         configureUI()
-        router.setRoot(for: mainWindow)
+        appMediator.setRoot(for: mainWindow)
         return true
     }
 

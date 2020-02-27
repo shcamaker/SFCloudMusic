@@ -14,35 +14,9 @@
 		391BFA3923F3E8BC007D8315 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 391BFA3723F3E8BC007D8315 /* LaunchScreen.storyboard */; };
 		391BFA4423F3E8BC007D8315 /* SFCloudMusicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BFA4323F3E8BC007D8315 /* SFCloudMusicTests.swift */; };
 		391BFA4F23F3E8BC007D8315 /* SFCloudMusicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BFA4E23F3E8BC007D8315 /* SFCloudMusicUITests.swift */; };
-		391BFA6123F3E963007D8315 /* SFAppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391BFA6023F3E963007D8315 /* SFAppCoordinator.swift */; };
-		3927BDE323FA274C00B39866 /* SFMineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927BDE223FA274C00B39866 /* SFMineViewModel.swift */; };
-		3927BDE523FA353A00B39866 /* SFCloundVillageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927BDE423FA353A00B39866 /* SFCloundVillageViewModel.swift */; };
-		3927BDE723FA35F200B39866 /* SFAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3927BDE623FA35F200B39866 /* SFAccountViewModel.swift */; };
 		393973F723F6A2D800295EAD /* UIImageView+SD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F623F6A2D800295EAD /* UIImageView+SD.swift */; };
-		396715AD23FB3C6600956072 /* SFAlertKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396715AC23FB3C6600956072 /* SFAlertKit.swift */; };
-		39AE046923F818DC002AAE3E /* SFBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */; };
-		39AE046B23F819BD002AAE3E /* SFBaseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046A23F819BD002AAE3E /* SFBaseCellModel.swift */; };
-		39AE046D23F82C1B002AAE3E /* SFBaseSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046C23F82C1B002AAE3E /* SFBaseSectionModel.swift */; };
-		39AE047623F92019002AAE3E /* SFVideoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE047523F92019002AAE3E /* SFVideoViewModel.swift */; };
-		39D1482B23F4FA420068E105 /* SFHomeTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1482A23F4FA420068E105 /* SFHomeTabCoordinator.swift */; };
-		39D1482D23F500B90068E105 /* SFDiscoverCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1482C23F500B90068E105 /* SFDiscoverCoordinator.swift */; };
-		39D1482F23F500D90068E105 /* SFVideoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1482E23F500D90068E105 /* SFVideoCoordinator.swift */; };
-		39D1483123F500E50068E105 /* SFMineCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1483023F500E50068E105 /* SFMineCoordinator.swift */; };
-		39D1483323F500F10068E105 /* SFCloudVillageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1483223F500F10068E105 /* SFCloudVillageCoordinator.swift */; };
-		39D1483523F501020068E105 /* SFAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1483423F501020068E105 /* SFAccountCoordinator.swift */; };
-		39D1484423F52CA00068E105 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D1484223F52CA00068E105 /* Account.storyboard */; };
-		39D1484523F52CA00068E105 /* SFAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1484323F52CA00068E105 /* SFAccountViewController.swift */; };
-		39D1484823F52CB90068E105 /* CloudVillage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D1484623F52CB80068E105 /* CloudVillage.storyboard */; };
-		39D1484923F52CB90068E105 /* SFCloundVillageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1484723F52CB80068E105 /* SFCloundVillageViewController.swift */; };
-		39D1485023F52D290068E105 /* SFMineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1484E23F52D290068E105 /* SFMineViewController.swift */; };
-		39D1485123F52D290068E105 /* Mine.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D1484F23F52D290068E105 /* Mine.storyboard */; };
-		39D1485423F52D3C0068E105 /* SFVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1485223F52D3C0068E105 /* SFVideoViewController.swift */; };
-		39D1485523F52D3C0068E105 /* Video.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39D1485323F52D3C0068E105 /* Video.storyboard */; };
-		39D1485723F52F5C0068E105 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1485623F52F5C0068E105 /* BindableType.swift */; };
-		39E4F68A2402986E0018B114 /* CTMediator+Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39E4F6892402986E0018B114 /* CTMediator+Login.swift */; };
 		723D682B6DD86A85A4D4E167 /* Pods_SFCloudMusic_SFCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F86953DFA63DF725446EAD /* Pods_SFCloudMusic_SFCloudMusicTests.framework */; };
 		7B935185115152E6A2DAA985 /* Pods_SFCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03149FC307EA6E816DBD222A /* Pods_SFCloudMusic.framework */; };
-		C308D50A2403B51B00C318D5 /* CTMediator+Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = C308D5092403B51B00C318D5 /* CTMediator+Discover.swift */; };
 		E517E7C397BEAEA22DEF7E8F /* Pods_SFCloudMusic_SFCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A321410D8C7ED30627969CD /* Pods_SFCloudMusic_SFCloudMusicUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,36 +56,10 @@
 		391BFA4A23F3E8BC007D8315 /* SFCloudMusicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFCloudMusicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		391BFA4E23F3E8BC007D8315 /* SFCloudMusicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCloudMusicUITests.swift; sourceTree = "<group>"; };
 		391BFA5023F3E8BC007D8315 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		391BFA6023F3E963007D8315 /* SFAppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAppCoordinator.swift; sourceTree = "<group>"; };
-		3927BDE223FA274C00B39866 /* SFMineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFMineViewModel.swift; sourceTree = "<group>"; };
-		3927BDE423FA353A00B39866 /* SFCloundVillageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCloundVillageViewModel.swift; sourceTree = "<group>"; };
-		3927BDE623FA35F200B39866 /* SFAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAccountViewModel.swift; sourceTree = "<group>"; };
 		393973F623F6A2D800295EAD /* UIImageView+SD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SD.swift"; sourceTree = "<group>"; };
-		396715AC23FB3C6600956072 /* SFAlertKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAlertKit.swift; sourceTree = "<group>"; };
-		39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseTableViewCell.swift; sourceTree = "<group>"; };
-		39AE046A23F819BD002AAE3E /* SFBaseCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseCellModel.swift; sourceTree = "<group>"; };
-		39AE046C23F82C1B002AAE3E /* SFBaseSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseSectionModel.swift; sourceTree = "<group>"; };
-		39AE047523F92019002AAE3E /* SFVideoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFVideoViewModel.swift; sourceTree = "<group>"; };
-		39D1482A23F4FA420068E105 /* SFHomeTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFHomeTabCoordinator.swift; sourceTree = "<group>"; };
-		39D1482C23F500B90068E105 /* SFDiscoverCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDiscoverCoordinator.swift; sourceTree = "<group>"; };
-		39D1482E23F500D90068E105 /* SFVideoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFVideoCoordinator.swift; sourceTree = "<group>"; };
-		39D1483023F500E50068E105 /* SFMineCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFMineCoordinator.swift; sourceTree = "<group>"; };
-		39D1483223F500F10068E105 /* SFCloudVillageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFCloudVillageCoordinator.swift; sourceTree = "<group>"; };
-		39D1483423F501020068E105 /* SFAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAccountCoordinator.swift; sourceTree = "<group>"; };
-		39D1484223F52CA00068E105 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
-		39D1484323F52CA00068E105 /* SFAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFAccountViewController.swift; sourceTree = "<group>"; };
-		39D1484623F52CB80068E105 /* CloudVillage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CloudVillage.storyboard; sourceTree = "<group>"; };
-		39D1484723F52CB80068E105 /* SFCloundVillageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCloundVillageViewController.swift; sourceTree = "<group>"; };
-		39D1484E23F52D290068E105 /* SFMineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMineViewController.swift; sourceTree = "<group>"; };
-		39D1484F23F52D290068E105 /* Mine.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Mine.storyboard; sourceTree = "<group>"; };
-		39D1485223F52D3C0068E105 /* SFVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFVideoViewController.swift; sourceTree = "<group>"; };
-		39D1485323F52D3C0068E105 /* Video.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Video.storyboard; sourceTree = "<group>"; };
-		39D1485623F52F5C0068E105 /* BindableType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindableType.swift; sourceTree = "<group>"; };
-		39E4F6892402986E0018B114 /* CTMediator+Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CTMediator+Login.swift"; sourceTree = "<group>"; };
 		68FADECB5E0E06EDB63C4BF2 /* Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicTests/Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig"; sourceTree = "<group>"; };
 		96F86953DFA63DF725446EAD /* Pods_SFCloudMusic_SFCloudMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFCloudMusic_SFCloudMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A489081DB43354771847AD9 /* Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicUITests/Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C308D5092403B51B00C318D5 /* CTMediator+Discover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CTMediator+Discover.swift"; sourceTree = "<group>"; };
 		C7674537F6A9DC86BEEFA4F8 /* Pods-SFCloudMusic-SFCloudMusicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicUITests.release.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicUITests/Pods-SFCloudMusic-SFCloudMusicUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,10 +129,6 @@
 		391BFA2B23F3E8BB007D8315 /* SFCloudMusic */ = {
 			isa = PBXGroup;
 			children = (
-				391BFA5C23F3E929007D8315 /* Coordinators */,
-				391BFA5D23F3E92A007D8315 /* Scenes */,
-				39E4F687240295F60018B114 /* Mediator */,
-				391BFA5F23F3E92A007D8315 /* Utils */,
 				393973F623F6A2D800295EAD /* UIImageView+SD.swift */,
 				391BFA2C23F3E8BB007D8315 /* AppDelegate.swift */,
 				391BFA2E23F3E8BB007D8315 /* SceneDelegate.swift */,
@@ -214,108 +158,6 @@
 			path = SFCloudMusicUITests;
 			sourceTree = "<group>";
 		};
-		391BFA5C23F3E929007D8315 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				391BFA6023F3E963007D8315 /* SFAppCoordinator.swift */,
-				39D1482A23F4FA420068E105 /* SFHomeTabCoordinator.swift */,
-				39D1482C23F500B90068E105 /* SFDiscoverCoordinator.swift */,
-				39D1482E23F500D90068E105 /* SFVideoCoordinator.swift */,
-				39D1483023F500E50068E105 /* SFMineCoordinator.swift */,
-				39D1483223F500F10068E105 /* SFCloudVillageCoordinator.swift */,
-				39D1483423F501020068E105 /* SFAccountCoordinator.swift */,
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		391BFA5D23F3E92A007D8315 /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				39AE046723F818B7002AAE3E /* Base */,
-				39D1483A23F502320068E105 /* Video */,
-				39D1483723F502310068E105 /* Mine */,
-				39D1483623F502310068E105 /* CloudVillage */,
-				39D1483823F502310068E105 /* Account */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		391BFA5F23F3E92A007D8315 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				396715AC23FB3C6600956072 /* SFAlertKit.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		39AE046723F818B7002AAE3E /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				39D1485623F52F5C0068E105 /* BindableType.swift */,
-				39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */,
-				39AE046A23F819BD002AAE3E /* SFBaseCellModel.swift */,
-				39AE046C23F82C1B002AAE3E /* SFBaseSectionModel.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		39D1483623F502310068E105 /* CloudVillage */ = {
-			isa = PBXGroup;
-			children = (
-				39D1484723F52CB80068E105 /* SFCloundVillageViewController.swift */,
-				3927BDE423FA353A00B39866 /* SFCloundVillageViewModel.swift */,
-				39D1484623F52CB80068E105 /* CloudVillage.storyboard */,
-			);
-			path = CloudVillage;
-			sourceTree = "<group>";
-		};
-		39D1483723F502310068E105 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				39D1484E23F52D290068E105 /* SFMineViewController.swift */,
-				3927BDE223FA274C00B39866 /* SFMineViewModel.swift */,
-				39D1484F23F52D290068E105 /* Mine.storyboard */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		39D1483823F502310068E105 /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				39D1484323F52CA00068E105 /* SFAccountViewController.swift */,
-				3927BDE623FA35F200B39866 /* SFAccountViewModel.swift */,
-				39D1484223F52CA00068E105 /* Account.storyboard */,
-			);
-			path = Account;
-			sourceTree = "<group>";
-		};
-		39D1483A23F502320068E105 /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				39D1485223F52D3C0068E105 /* SFVideoViewController.swift */,
-				39AE047523F92019002AAE3E /* SFVideoViewModel.swift */,
-				39D1485323F52D3C0068E105 /* Video.storyboard */,
-			);
-			path = Video;
-			sourceTree = "<group>";
-		};
-		39E4F687240295F60018B114 /* Mediator */ = {
-			isa = PBXGroup;
-			children = (
-				C308D5082403B4F800C318D5 /* DiscoverKitExtension */,
-				39E4F6882402982D0018B114 /* LoginKitExtension */,
-			);
-			path = Mediator;
-			sourceTree = "<group>";
-		};
-		39E4F6882402982D0018B114 /* LoginKitExtension */ = {
-			isa = PBXGroup;
-			children = (
-				39E4F6892402986E0018B114 /* CTMediator+Login.swift */,
-			);
-			path = LoginKitExtension;
-			sourceTree = "<group>";
-		};
 		67E3ADBA2FD539F56FDBDB0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,14 +166,6 @@
 				2A321410D8C7ED30627969CD /* Pods_SFCloudMusic_SFCloudMusicUITests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		C308D5082403B4F800C318D5 /* DiscoverKitExtension */ = {
-			isa = PBXGroup;
-			children = (
-				C308D5092403B51B00C318D5 /* CTMediator+Discover.swift */,
-			);
-			path = DiscoverKitExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -448,10 +282,6 @@
 			files = (
 				391BFA3923F3E8BC007D8315 /* LaunchScreen.storyboard in Resources */,
 				391BFA3623F3E8BC007D8315 /* Assets.xcassets in Resources */,
-				39D1484823F52CB90068E105 /* CloudVillage.storyboard in Resources */,
-				39D1484423F52CA00068E105 /* Account.storyboard in Resources */,
-				39D1485123F52D290068E105 /* Mine.storyboard in Resources */,
-				39D1485523F52D3C0068E105 /* Video.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,32 +426,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				39D1482B23F4FA420068E105 /* SFHomeTabCoordinator.swift in Sources */,
-				391BFA6123F3E963007D8315 /* SFAppCoordinator.swift in Sources */,
-				39D1485423F52D3C0068E105 /* SFVideoViewController.swift in Sources */,
-				39D1484523F52CA00068E105 /* SFAccountViewController.swift in Sources */,
-				39AE046D23F82C1B002AAE3E /* SFBaseSectionModel.swift in Sources */,
-				396715AD23FB3C6600956072 /* SFAlertKit.swift in Sources */,
 				391BFA3123F3E8BB007D8315 /* ViewController.swift in Sources */,
-				39D1485723F52F5C0068E105 /* BindableType.swift in Sources */,
-				3927BDE723FA35F200B39866 /* SFAccountViewModel.swift in Sources */,
-				39D1482D23F500B90068E105 /* SFDiscoverCoordinator.swift in Sources */,
-				39D1483523F501020068E105 /* SFAccountCoordinator.swift in Sources */,
-				39D1484923F52CB90068E105 /* SFCloundVillageViewController.swift in Sources */,
 				391BFA2D23F3E8BB007D8315 /* AppDelegate.swift in Sources */,
-				39D1483123F500E50068E105 /* SFMineCoordinator.swift in Sources */,
-				39D1485023F52D290068E105 /* SFMineViewController.swift in Sources */,
 				393973F723F6A2D800295EAD /* UIImageView+SD.swift in Sources */,
-				3927BDE523FA353A00B39866 /* SFCloundVillageViewModel.swift in Sources */,
-				39D1483323F500F10068E105 /* SFCloudVillageCoordinator.swift in Sources */,
 				391BFA2F23F3E8BB007D8315 /* SceneDelegate.swift in Sources */,
-				C308D50A2403B51B00C318D5 /* CTMediator+Discover.swift in Sources */,
-				39AE046923F818DC002AAE3E /* SFBaseTableViewCell.swift in Sources */,
-				3927BDE323FA274C00B39866 /* SFMineViewModel.swift in Sources */,
-				39E4F68A2402986E0018B114 /* CTMediator+Login.swift in Sources */,
-				39AE046B23F819BD002AAE3E /* SFBaseCellModel.swift in Sources */,
-				39AE047623F92019002AAE3E /* SFVideoViewModel.swift in Sources */,
-				39D1482F23F500D90068E105 /* SFVideoCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
