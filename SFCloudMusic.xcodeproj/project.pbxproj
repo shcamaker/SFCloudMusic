@@ -34,6 +34,7 @@
 		7B935185115152E6A2DAA985 /* Pods_SFCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03149FC307EA6E816DBD222A /* Pods_SFCloudMusic.framework */; };
 		C363777C2410D55800A44E1C /* SFMyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C363777B2410D55800A44E1C /* SFMyService.swift */; };
 		C36377802410F74A00A44E1C /* SFAuthenticatedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C363777F2410F74A00A44E1C /* SFAuthenticatedUser.swift */; };
+		C36377862410FBE200A44E1C /* json.json in Resources */ = {isa = PBXBuildFile; fileRef = C36377852410FBE200A44E1C /* json.json */; };
 		C36515042407C0A0008558B8 /* SFMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36515032407C0A0008558B8 /* SFMediator.swift */; };
 		C365150C2407C0A8008558B8 /* CTMediator+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36515062407C0A8008558B8 /* CTMediator+Video.swift */; };
 		C365150D2407C0A8008558B8 /* CTMediator+Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36515072407C0A8008558B8 /* CTMediator+Discover.swift */; };
@@ -133,6 +134,7 @@
 		9A489081DB43354771847AD9 /* Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicUITests/Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C363777B2410D55800A44E1C /* SFMyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFMyService.swift; sourceTree = "<group>"; };
 		C363777F2410F74A00A44E1C /* SFAuthenticatedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAuthenticatedUser.swift; sourceTree = "<group>"; };
+		C36377852410FBE200A44E1C /* json.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = json.json; sourceTree = "<group>"; };
 		C36515032407C0A0008558B8 /* SFMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMediator.swift; sourceTree = "<group>"; };
 		C36515062407C0A8008558B8 /* CTMediator+Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTMediator+Video.swift"; sourceTree = "<group>"; };
 		C36515072407C0A8008558B8 /* CTMediator+Discover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTMediator+Discover.swift"; sourceTree = "<group>"; };
@@ -439,6 +441,7 @@
 			isa = PBXGroup;
 			children = (
 				C363777F2410F74A00A44E1C /* SFAuthenticatedUser.swift */,
+				C36377852410FBE200A44E1C /* json.json */,
 			);
 			path = BLL;
 			sourceTree = "<group>";
@@ -575,6 +578,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C36377862410FBE200A44E1C /* json.json in Resources */,
 				391BFA3923F3E8BC007D8315 /* LaunchScreen.storyboard in Resources */,
 				C36515282407C309008558B8 /* Discover.storyboard in Resources */,
 				391BFA3623F3E8BC007D8315 /* Assets.xcassets in Resources */,
