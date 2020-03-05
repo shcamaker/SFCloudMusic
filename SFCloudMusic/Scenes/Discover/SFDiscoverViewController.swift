@@ -10,6 +10,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 import Action
+import Moya
 
 class SFDiscoverViewController: UIViewController, BindableType {
     
@@ -30,6 +31,23 @@ class SFDiscoverViewController: UIViewController, BindableType {
         } else {
             // Fallback on earlier versions
         }
+       
+        
+//        let endpointClosure = { (target: SFMyService) -> Endpoint in
+//            let urlStr = try? String(contentsOf: URL(target: target))
+//            return Endpoint(url: urlStr ?? "", sampleResponseClosure: {.networkResponse(200, target.sampleData)}, method: target.method, task: target.task, httpHeaderFields: ["Content-type": "application/json"])
+//        }
+        let provider = MoyaProvider<SFMyService>()
+        provider.rx.request(.login(email: "Shen@111.com", password: "123456a")).subscribe { (event) in
+            switch event {
+            case let .success(response):
+                _ = UIImage(data: response.data)
+                _ = try? response.mapImage()
+                
+            case let .error(error):
+                print(error)
+            }
+        }.disposed(by: disposeBag)
         
     }
     

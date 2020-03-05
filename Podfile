@@ -1,6 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-platform :ios, '9.0'
+platform :ios, '10.0'
 
 target 'SFCloudMusic' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -14,7 +14,7 @@ target 'SFCloudMusic' do
   pod 'XCoordinator/Combine'
   pod 'SDWebImage'
   pod 'CTMediator'
-  
+  pod 'Moya/RxSwift', '~> 14.0'
   
   target 'SFCloudMusicTests' do
     pod 'RxBlocking', '~> 5'

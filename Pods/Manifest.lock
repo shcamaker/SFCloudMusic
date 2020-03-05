@@ -2,7 +2,13 @@ PODS:
   - Action (4.0.0):
     - RxCocoa (~> 5.0)
     - RxSwift (~> 5.0)
+  - Alamofire (5.0.2)
   - CTMediator (25)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - Moya/RxSwift (14.0.0):
+    - Moya/Core
+    - RxSwift (~> 5.0)
   - RxBlocking (5.0.1):
     - RxSwift (~> 5)
   - RxCocoa (5.0.1):
@@ -28,6 +34,7 @@ PODS:
 DEPENDENCIES:
   - Action
   - CTMediator
+  - Moya/RxSwift (~> 14.0)
   - RxBlocking (~> 5)
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
@@ -40,7 +47,9 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Action
+    - Alamofire
     - CTMediator
+    - Moya
     - RxBlocking
     - RxCocoa
     - RxRelay
@@ -51,7 +60,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Action: 0d14986aad0f1330aa27ce65d0cdeaacbb63d91c
+  Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
   CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   RxBlocking: c5e090f42d046df8b0e7752742510f349963710f
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
@@ -60,6 +71,6 @@ SPEC CHECKSUMS:
   SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
   XCoordinator: 9ee654fedef1ffede33d5c11677708a555c00542
 
-PODFILE CHECKSUM: 518f4b18a7b240b8e8e525ebd00c983577bd9c19
+PODFILE CHECKSUM: f65479e182495416a28ae3cb6a41b01ec9ae8dae
 
 COCOAPODS: 1.8.3
