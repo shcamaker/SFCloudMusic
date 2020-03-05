@@ -15,6 +15,7 @@ target 'SFCloudMusic' do
   pod 'SDWebImage'
   pod 'CTMediator'
   pod 'Moya/RxSwift', '~> 14.0'
+  pod 'QTEventBus'
   
   target 'SFCloudMusicTests' do
     pod 'RxBlocking', '~> 5'

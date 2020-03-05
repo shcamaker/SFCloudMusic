@@ -9,6 +9,9 @@ PODS:
   - Moya/RxSwift (14.0.0):
     - Moya/Core
     - RxSwift (~> 5.0)
+  - QTEventBus (0.4.1):
+    - QTEventBus/Core (= 0.4.1)
+  - QTEventBus/Core (0.4.1)
   - RxBlocking (5.0.1):
     - RxSwift (~> 5)
   - RxCocoa (5.0.1):
@@ -35,6 +38,7 @@ DEPENDENCIES:
   - Action
   - CTMediator
   - Moya/RxSwift (~> 14.0)
+  - QTEventBus
   - RxBlocking (~> 5)
   - RxCocoa (~> 5)
   - RxSwift (~> 5)
@@ -50,6 +54,7 @@ SPEC REPOS:
     - Alamofire
     - CTMediator
     - Moya
+    - QTEventBus
     - RxBlocking
     - RxCocoa
     - RxRelay
@@ -63,6 +68,7 @@ SPEC CHECKSUMS:
   Alamofire: 3ba7a4db18b4f62c4a1c0e1cb39d7f3d52e10ada
   CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  QTEventBus: ea42577d40303f11fb2392e1383fb5d4a7335609
   RxBlocking: c5e090f42d046df8b0e7752742510f349963710f
   RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
   RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
@@ -71,6 +77,6 @@ SPEC CHECKSUMS:
   SDWebImage: 4d5c027c935438f341ed33dbac53ff9f479922ca
   XCoordinator: 9ee654fedef1ffede33d5c11677708a555c00542
 
-PODFILE CHECKSUM: f65479e182495416a28ae3cb6a41b01ec9ae8dae
+PODFILE CHECKSUM: 246e88db74a259edd253ab369672ee2efd1e0738
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4

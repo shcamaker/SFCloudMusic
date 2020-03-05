@@ -7,10 +7,13 @@
 //
 
 import XCTest
+import Moya
+import RxSwift
+
 @testable import SFCloudMusic
 
 class SFCloudMusicTests: XCTestCase {
-
+private let disposeBag = DisposeBag()
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -20,8 +23,23 @@ class SFCloudMusicTests: XCTestCase {
     }
 
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+     
+       let endpointClosure = { (target: SFLoginAPI) -> Endpoint in
+           let url = URL(target: target).absoluteString
+           return Endpoint(url: url, sampleResponseClosure: {.networkResponse(200, target.sampleData)}, method: target.method, task: target.task, httpHeaderFields: target.headers)
+       }
+       let provider = MoyaProvider<SFLoginAPI>(endpointClosure: endpointClosure, stubClosure: MoyaProvider.immediatelyStub)
+       provider.rx.request(.login(email: "Shen@111.com", password: "123456a")).subscribe { (event) in
+           switch event {
+           case let .success(response):
+               let decoder = JSONDecoder()
+               let loginInfo = try? decoder.decode(SFloginInfo.self, from: response.data)
+               let user = loginInfo?.data.toAuthenticatedUser()
+               print(user?.accessToken)
+           case let .error(error):
+               print(error)
+           }
+       }.disposed(by: disposeBag)
     }
 
     func testPerformanceExample() {

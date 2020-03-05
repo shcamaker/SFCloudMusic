@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import QTEventBus
 
 class SFMineViewController: UIViewController, BindableType {
 
@@ -15,6 +16,20 @@ class SFMineViewController: UIViewController, BindableType {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        subscribeNotification("clickNotification")?.next({ (event) in
+            print("刷新界面")
+        })
+        
+        subscribeSharedBus(SFDemoClass.self)?.next({ (event) in
+            guard let event  = event as? SFDemoClass else {
+                return
+            }
+            print(event.count)
+        })
+        
+        subscribeSharedBus(ofJSON: "EventKey")?.next({ (event) in
+            print("收到的数据：\(event?.data)")
+        })
         
     }
     

@@ -11,7 +11,7 @@
         <!--Video View Controller-->
         <scene sceneID="eIv-c3-XvE">
             <objects>
-                <viewController storyboardIdentifier="SFVideoViewController" id="BmG-t1-mfF" customClass="SFVideoViewController" customModule="SFCloudMusicVideoKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SFVideoViewController" id="BmG-t1-mfF" customClass="SFVideoViewController" customModule="SFCloudMusic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J7M-Yp-0cH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,6 +23,30 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Id-AR-IDq">
+                                <rect key="frame" x="199" y="431" width="31" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="通知"/>
+                                <connections>
+                                    <action selector="click:" destination="BmG-t1-mfF" eventType="touchUpInside" id="k5o-dA-Rgm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="amb-6Q-ltA">
+                                <rect key="frame" x="183" y="478" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="属性改变"/>
+                                <connections>
+                                    <action selector="propertyClick:" destination="BmG-t1-mfF" eventType="touchUpInside" id="1R4-Tt-eaG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCz-ID-O1S">
+                                <rect key="frame" x="190" y="532" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="发送Json"/>
+                                <connections>
+                                    <action selector="dispatchJson:" destination="BmG-t1-mfF" eventType="touchUpInside" id="pKI-Bs-Ey7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.082338817420000002" green="0.082361035050000003" blue="0.082337401810000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="1bg-4R-zid"/>

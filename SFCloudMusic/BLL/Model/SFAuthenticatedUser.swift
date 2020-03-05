@@ -9,8 +9,10 @@
 import Foundation
 
 struct SFAuthenticatedUser {
-    let userId: String
+    let userID: String
     let accessToken: String
     let refreshToken: String
     
 }
+
+

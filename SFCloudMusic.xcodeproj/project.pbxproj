@@ -19,6 +19,12 @@
 		393973F423F67DEA00295EAD /* UIColor+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F123F67DE800295EAD /* UIColor+UI.swift */; };
 		393973F723F6A2D800295EAD /* UIImageView+SD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393973F623F6A2D800295EAD /* UIImageView+SD.swift */; };
 		396715AD23FB3C6600956072 /* SFAlertKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 396715AC23FB3C6600956072 /* SFAlertKit.swift */; };
+		3979B229241134F400813E0C /* SFloginInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979B228241134F400813E0C /* SFloginInfo.swift */; };
+		3979B22B2411365800813E0C /* SFUserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979B22A2411365800813E0C /* SFUserResult.swift */; };
+		3979B230241145E900813E0C /* SFUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979B22F241145E900813E0C /* SFUserManager.swift */; };
+		3979B2322411467000813E0C /* SFUserServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979B2312411467000813E0C /* SFUserServiceProtocol.swift */; };
+		3979B23424114B2C00813E0C /* SFUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979B23324114B2C00813E0C /* SFUserService.swift */; };
+		3979B23A2411657B00813E0C /* SFDemoClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3979B2392411657B00813E0C /* SFDemoClass.swift */; };
 		39818CDB23F9915A0055C2CF /* String+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39818CDA23F9915A0055C2CF /* String+URL.swift */; };
 		39AE046923F818DC002AAE3E /* SFBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */; };
 		39AE046B23F819BD002AAE3E /* SFBaseCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39AE046A23F819BD002AAE3E /* SFBaseCellModel.swift */; };
@@ -32,9 +38,9 @@
 		39D1484123F502620068E105 /* SFLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1483E23F502620068E105 /* SFLoginViewController.swift */; };
 		723D682B6DD86A85A4D4E167 /* Pods_SFCloudMusic_SFCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F86953DFA63DF725446EAD /* Pods_SFCloudMusic_SFCloudMusicTests.framework */; };
 		7B935185115152E6A2DAA985 /* Pods_SFCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03149FC307EA6E816DBD222A /* Pods_SFCloudMusic.framework */; };
-		C363777C2410D55800A44E1C /* SFMyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C363777B2410D55800A44E1C /* SFMyService.swift */; };
+		C363777C2410D55800A44E1C /* SFLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C363777B2410D55800A44E1C /* SFLoginAPI.swift */; };
 		C36377802410F74A00A44E1C /* SFAuthenticatedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C363777F2410F74A00A44E1C /* SFAuthenticatedUser.swift */; };
-		C36377862410FBE200A44E1C /* json.json in Resources */ = {isa = PBXBuildFile; fileRef = C36377852410FBE200A44E1C /* json.json */; };
+		C36377862410FBE200A44E1C /* loginjson.json in Resources */ = {isa = PBXBuildFile; fileRef = C36377852410FBE200A44E1C /* loginjson.json */; };
 		C36515042407C0A0008558B8 /* SFMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36515032407C0A0008558B8 /* SFMediator.swift */; };
 		C365150C2407C0A8008558B8 /* CTMediator+Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36515062407C0A8008558B8 /* CTMediator+Video.swift */; };
 		C365150D2407C0A8008558B8 /* CTMediator+Discover.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36515072407C0A8008558B8 /* CTMediator+Discover.swift */; };
@@ -118,6 +124,12 @@
 		393973F123F67DE800295EAD /* UIColor+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+UI.swift"; sourceTree = "<group>"; };
 		393973F623F6A2D800295EAD /* UIImageView+SD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+SD.swift"; sourceTree = "<group>"; };
 		396715AC23FB3C6600956072 /* SFAlertKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAlertKit.swift; sourceTree = "<group>"; };
+		3979B228241134F400813E0C /* SFloginInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFloginInfo.swift; path = SFCloudMusic/Scenes/Login/SFloginInfo.swift; sourceTree = SOURCE_ROOT; };
+		3979B22A2411365800813E0C /* SFUserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFUserResult.swift; path = SFCloudMusic/Scenes/Login/SFUserResult.swift; sourceTree = SOURCE_ROOT; };
+		3979B22F241145E900813E0C /* SFUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFUserManager.swift; sourceTree = "<group>"; };
+		3979B2312411467000813E0C /* SFUserServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFUserServiceProtocol.swift; sourceTree = "<group>"; };
+		3979B23324114B2C00813E0C /* SFUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SFUserService.swift; path = SFCloudMusic/BLL/Infrastructure/SFUserService.swift; sourceTree = SOURCE_ROOT; };
+		3979B2392411657B00813E0C /* SFDemoClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFDemoClass.swift; sourceTree = "<group>"; };
 		39818CDA23F9915A0055C2CF /* String+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+URL.swift"; sourceTree = "<group>"; };
 		39AE046823F818DC002AAE3E /* SFBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseTableViewCell.swift; sourceTree = "<group>"; };
 		39AE046A23F819BD002AAE3E /* SFBaseCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFBaseCellModel.swift; sourceTree = "<group>"; };
@@ -132,9 +144,9 @@
 		68FADECB5E0E06EDB63C4BF2 /* Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicTests/Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig"; sourceTree = "<group>"; };
 		96F86953DFA63DF725446EAD /* Pods_SFCloudMusic_SFCloudMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFCloudMusic_SFCloudMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A489081DB43354771847AD9 /* Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicUITests/Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C363777B2410D55800A44E1C /* SFMyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFMyService.swift; sourceTree = "<group>"; };
+		C363777B2410D55800A44E1C /* SFLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFLoginAPI.swift; sourceTree = "<group>"; };
 		C363777F2410F74A00A44E1C /* SFAuthenticatedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAuthenticatedUser.swift; sourceTree = "<group>"; };
-		C36377852410FBE200A44E1C /* json.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = json.json; sourceTree = "<group>"; };
+		C36377852410FBE200A44E1C /* loginjson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loginjson.json; sourceTree = "<group>"; };
 		C36515032407C0A0008558B8 /* SFMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMediator.swift; sourceTree = "<group>"; };
 		C36515062407C0A8008558B8 /* CTMediator+Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTMediator+Video.swift"; sourceTree = "<group>"; };
 		C36515072407C0A8008558B8 /* CTMediator+Discover.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CTMediator+Discover.swift"; sourceTree = "<group>"; };
@@ -328,6 +340,31 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		3979B22C241145B100813E0C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3979B22F241145E900813E0C /* SFUserManager.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3979B22D241145B100813E0C /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				3979B2312411467000813E0C /* SFUserServiceProtocol.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		3979B22E241145B100813E0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C363777F2410F74A00A44E1C /* SFAuthenticatedUser.swift */,
+				3979B2392411657B00813E0C /* SFDemoClass.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		39AE046023F7F003002AAE3E /* CustomControl */ = {
 			isa = PBXGroup;
 			children = (
@@ -433,6 +470,9 @@
 		C36377782410D14500A44E1C /* DAL */ = {
 			isa = PBXGroup;
 			children = (
+				3979B23324114B2C00813E0C /* SFUserService.swift */,
+				3979B228241134F400813E0C /* SFloginInfo.swift */,
+				3979B22A2411365800813E0C /* SFUserResult.swift */,
 			);
 			path = DAL;
 			sourceTree = "<group>";
@@ -440,8 +480,10 @@
 		C36377792410D14500A44E1C /* BLL */ = {
 			isa = PBXGroup;
 			children = (
-				C363777F2410F74A00A44E1C /* SFAuthenticatedUser.swift */,
-				C36377852410FBE200A44E1C /* json.json */,
+				3979B22C241145B100813E0C /* Application */,
+				3979B22D241145B100813E0C /* Infrastructure */,
+				3979B22E241145B100813E0C /* Model */,
+				C36377852410FBE200A44E1C /* loginjson.json */,
 			);
 			path = BLL;
 			sourceTree = "<group>";
@@ -449,7 +491,7 @@
 		C363777A2410D51500A44E1C /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				C363777B2410D55800A44E1C /* SFMyService.swift */,
+				C363777B2410D55800A44E1C /* SFLoginAPI.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -578,7 +620,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C36377862410FBE200A44E1C /* json.json in Resources */,
+				C36377862410FBE200A44E1C /* loginjson.json in Resources */,
 				391BFA3923F3E8BC007D8315 /* LaunchScreen.storyboard in Resources */,
 				C36515282407C309008558B8 /* Discover.storyboard in Resources */,
 				391BFA3623F3E8BC007D8315 /* Assets.xcassets in Resources */,
@@ -733,6 +775,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C36515102407C0A8008558B8 /* CTMediator+Mine.swift in Sources */,
+				3979B230241145E900813E0C /* SFUserManager.swift in Sources */,
 				39D1482B23F4FA420068E105 /* SFHomeTabCoordinator.swift in Sources */,
 				391BFA6123F3E963007D8315 /* SFAppCoordinator.swift in Sources */,
 				C36515322407C3B1008558B8 /* SFVideoViewController.swift in Sources */,
@@ -740,10 +783,11 @@
 				393973F323F67DEA00295EAD /* UIImage+UI.swift in Sources */,
 				393973F423F67DEA00295EAD /* UIColor+UI.swift in Sources */,
 				C36515432407C3F2008558B8 /* Target_CloudVillage.swift in Sources */,
-				C363777C2410D55800A44E1C /* SFMyService.swift in Sources */,
+				C363777C2410D55800A44E1C /* SFLoginAPI.swift in Sources */,
 				C36515422407C3F2008558B8 /* SFCloundVillageViewModel.swift in Sources */,
 				C36377802410F74A00A44E1C /* SFAuthenticatedUser.swift in Sources */,
 				C365150F2407C0A8008558B8 /* CTMediator+Account.swift in Sources */,
+				3979B229241134F400813E0C /* SFloginInfo.swift in Sources */,
 				C36515112407C0A8008558B8 /* CTMediator+Login.swift in Sources */,
 				C36515502407C461008558B8 /* SFCycleScrollView1.swift in Sources */,
 				C365154B2407C413008558B8 /* SFAccountViewController.swift in Sources */,
@@ -752,7 +796,10 @@
 				C36515242407C309008558B8 /* SFDiscoverViewController.swift in Sources */,
 				396715AD23FB3C6600956072 /* SFAlertKit.swift in Sources */,
 				391BFA3123F3E8BB007D8315 /* ViewController.swift in Sources */,
+				3979B2322411467000813E0C /* SFUserServiceProtocol.swift in Sources */,
+				3979B22B2411365800813E0C /* SFUserResult.swift in Sources */,
 				39D1482D23F500B90068E105 /* SFDiscoverCoordinator.swift in Sources */,
+				3979B23A2411657B00813E0C /* SFDemoClass.swift in Sources */,
 				39818CDB23F9915A0055C2CF /* String+URL.swift in Sources */,
 				C365153A2407C3CD008558B8 /* SFMineViewModel.swift in Sources */,
 				C365154A2407C413008558B8 /* SFAccountViewModel.swift in Sources */,
@@ -783,6 +830,7 @@
 				C36515452407C3F2008558B8 /* SFCloundVillageViewController.swift in Sources */,
 				39AE046B23F819BD002AAE3E /* SFBaseCellModel.swift in Sources */,
 				C36515352407C3B1008558B8 /* SFVideoViewModel.swift in Sources */,
+				3979B23424114B2C00813E0C /* SFUserService.swift in Sources */,
 				39D1484123F502620068E105 /* SFLoginViewController.swift in Sources */,
 				39D1482F23F500D90068E105 /* SFVideoCoordinator.swift in Sources */,
 			);

@@ -7,30 +7,42 @@
 //
 
 import UIKit
+import QTEventBus
 
 class SFVideoViewController: UIViewController, BindableType {
     
     var viewModel: SFVideoViewModel!
     
-
+   var count = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 150))
-//        imageView.image = imagePath(imageName: "dis_main_cycle1", imageFormat: "png")
-//        view.addSubview(imageView)
+        
     }
 
-    func imagePath(imageName: String, imageFormat: String) -> UIImage{
-        let bundle = Bundle(for: SFVideoViewController.self)
-        let fullImageName = "\(imageName)@2x.\(imageFormat)"
-        guard let path  = bundle.path(forResource: fullImageName, ofType: nil, inDirectory: "SFCloudMusicFunctionKit.bundle"), let image  = UIImage(contentsOfFile: path) else {
-            return UIImage()
-        }
-        return image
+    
+    @IBAction func click(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "clickNotification"), object: nil)
+        
     }
+    
+   
+    @IBAction func propertyClick(_ sender: Any) {
 
+        count += 1
+        let event = SFDemoClass()
+        event.count = count
+        QTEventBus<AnyObject>.shared.dispatch(event)
+    }
+    
+    @IBAction func dispatchJson(_ sender: Any) {
+        let event = QTJsonEvent(id: "EventKey", jsonObject: ["alex":"iosDeveloper"])
+        QTEventBus<AnyObject>.shared.dispatch(event)
+    }
+    
+    
+    
     func bindViewModel() {
         
     }
