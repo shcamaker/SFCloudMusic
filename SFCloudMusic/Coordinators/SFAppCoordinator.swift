@@ -24,8 +24,9 @@ class SFAppCoordinator: NavigationCoordinator<AppRoute> {
     override func prepareTransition(for route: AppRoute) -> NavigationTransition {
            switch route {
            case .login:
-                let viewController = CTMediator.sharedInstance()?.loginViewController { [unowned self] in
-                    self.unownedRouter.rx.trigger(.homeTab)
+                let viewController = CTMediator.sharedInstance()?.loginViewController { [weak self] in
+                    guard let self = self else { return }
+                    self.unownedRouter.trigger(.homeTab)
                 }
                 guard let loginVC = viewController else {
                     return .none()

@@ -25,7 +25,7 @@ class SFProvider {
                 return defaultEndpoint.adding(newHTTPHeaderFields: ["AUTHENTICATION_TOKEN": SFProvider.shard.token])
             }
         }
-        let provider = MoyaProvider<SFSeviceAPI>(endpointClosure: endpointClosure, stubClosure: MoyaProvider.immediatelyStub)
+        let provider = MoyaProvider<SFSeviceAPI>(endpointClosure: endpointClosure)//, stubClosure: MoyaProvider.immediatelyStub)
         return provider.rx.request(target).subscribe { (event) in
             switch event {
             case let .success(response):

@@ -15,7 +15,7 @@ import RxSwift
         let bundle = Bundle(for: Target_Login.self)
         let storyboard = UIStoryboard(name: "Login", bundle: bundle)
         var viewController = storyboard.instantiateViewController(withIdentifier: "SFLoginViewController") as? SFLoginViewController
-        guard let loginBlock = params["callback"] as? () -> (Observable<Void>) else {
+        guard let loginBlock = params["callback"] as? () -> () else {
             return nil
         }
         let viewModel = SFLoginViewModel(loginBlock: loginBlock)

@@ -68,9 +68,19 @@ class SFLoginViewController: UIViewController, BindableType {
                    .bind(to: loginButton.rx.isEnabled)
                    .disposed(by: disposeBag)
 
-        loginButton.rx.tap
+        let usernameAndPassword = Observable.combineLatest(usernameTextField.rx.text.orEmpty, passwordTextField.rx.text.orEmpty)
+        loginButton.rx.tap.asObservable().withLatestFrom(usernameAndPassword)
             .bind(to: viewModel.loginTrigger)
             .disposed(by: disposeBag)
+        
+        viewModel.loginAction.completions.subscribe { [weak self] (_) in
+            guard let self = self else { return }
+            self.viewModel.loginBlock()
+        }.disposed(by: disposeBag)
+        
+        viewModel.loginAction.errors.subscribe { (_) in
+            print("error")
+        }.disposed(by: disposeBag)
     }
    
 }

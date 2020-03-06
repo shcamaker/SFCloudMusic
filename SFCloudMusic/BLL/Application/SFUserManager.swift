@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 struct SFUserManager {
     
@@ -14,6 +15,8 @@ struct SFUserManager {
     init(userService: SFUserServiceProtocol) {
         self.userService = userService
     }
-    
+    func login(withEmail email: String, password: String) -> Observable<SFAuthenticatedUser> {
+        return userService.login(withEmail: email, password: password)
+    }
     
 }

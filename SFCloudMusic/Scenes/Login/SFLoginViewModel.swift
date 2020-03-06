@@ -12,14 +12,19 @@ import RxSwift
 class SFLoginViewModel: NSObject {
     private(set) lazy var loginTrigger = loginAction.inputs
     
-    var loginBlock:(() -> (Observable<Void>))
+    var loginBlock:() -> ()
     
-    private lazy var loginAction = CocoaAction { [unowned self] in
-        self.loginBlock()
-    }
+    var loginAction: Action<(String, String), SFAuthenticatedUser>
     
-    init(loginBlock: @escaping () -> (Observable<Void>)) {
+    init(loginBlock: @escaping () -> ()) {
         self.loginBlock = loginBlock
+        
+        let userManager = SFUserManager(userService: SFUserService())
+        loginAction = Action { email, password in
+            userManager.login(withEmail: "Shen@111.com", password: "123456a")
+        }
+            
+        
     }
 
 }

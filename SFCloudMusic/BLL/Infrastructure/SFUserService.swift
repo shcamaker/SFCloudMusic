@@ -15,7 +15,7 @@ struct SFUserService: SFUserServiceProtocol {
     
     func login(withEmail email: String, password: String) -> Observable<SFAuthenticatedUser> {
         return Observable<SFAuthenticatedUser>.create { observer -> Disposable in
-            return SFProvider.request(target: .login(email: "Shen@111.com", password: "123456a"), success: { (response) in
+            return SFProvider.request(target: .login(email: email, password: password), success: { (response) in
                 let decoder = JSONDecoder()
                 let loginInfo = try? decoder.decode(SFloginInfo.self, from: response.data)
                 guard let user = loginInfo?.data.toAuthenticatedUser() else { return }
