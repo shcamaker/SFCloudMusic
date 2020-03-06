@@ -24,11 +24,11 @@ private let disposeBag = DisposeBag()
 
     func testExample() {
      
-       let endpointClosure = { (target: SFLoginAPI) -> Endpoint in
+       let endpointClosure = { (target: SFSeviceAPI) -> Endpoint in
            let url = URL(target: target).absoluteString
            return Endpoint(url: url, sampleResponseClosure: {.networkResponse(200, target.sampleData)}, method: target.method, task: target.task, httpHeaderFields: target.headers)
        }
-       let provider = MoyaProvider<SFLoginAPI>(endpointClosure: endpointClosure, stubClosure: MoyaProvider.immediatelyStub)
+       let provider = MoyaProvider<SFSeviceAPI>(endpointClosure: endpointClosure, stubClosure: MoyaProvider.immediatelyStub)
        provider.rx.request(.login(email: "Shen@111.com", password: "123456a")).subscribe { (event) in
            switch event {
            case let .success(response):

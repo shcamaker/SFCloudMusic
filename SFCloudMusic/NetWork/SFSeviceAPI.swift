@@ -1,5 +1,5 @@
 //
-//  SFLoginAPI.swift
+//  SFSeviceAPI.swift
 //  SFCloudMusic
 //
 //  Created by Alex.Shen on 3/5/20.
@@ -9,12 +9,12 @@
 import Foundation
 import Moya
 
-enum SFLoginAPI {
+enum SFSeviceAPI {
     case login(email: String, password: String)
     case other
 }
 
-extension SFLoginAPI: TargetType {
+extension SFSeviceAPI: TargetType {
     var baseURL: URL { return URL(string: "http://10.200.11.144:3000/api/")! }
     var path: String {
         switch self {

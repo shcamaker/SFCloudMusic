@@ -18,6 +18,7 @@ class SFMineViewController: UIViewController, BindableType {
         
         subscribeNotification("clickNotification")?.next({ (event) in
             print("刷新界面")
+            print(SFProvider.shard.token)
         })
         
         subscribeSharedBus(SFDemoClass.self)?.next({ (event) in

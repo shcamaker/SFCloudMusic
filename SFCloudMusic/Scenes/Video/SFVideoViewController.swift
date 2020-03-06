@@ -24,16 +24,16 @@ class SFVideoViewController: UIViewController, BindableType {
     
     @IBAction func click(_ sender: Any) {
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "clickNotification"), object: nil)
-        
+        count += 1
+        SFProvider.shard.updateAccessToken(newToken: "ddddd\(count)")
     }
     
    
     @IBAction func propertyClick(_ sender: Any) {
-
         count += 1
         let event = SFDemoClass()
-        event.count = count
         QTEventBus<AnyObject>.shared.dispatch(event)
+        event.count = count
     }
     
     @IBAction func dispatchJson(_ sender: Any) {

@@ -38,7 +38,7 @@
 		39D1484123F502620068E105 /* SFLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D1483E23F502620068E105 /* SFLoginViewController.swift */; };
 		723D682B6DD86A85A4D4E167 /* Pods_SFCloudMusic_SFCloudMusicTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96F86953DFA63DF725446EAD /* Pods_SFCloudMusic_SFCloudMusicTests.framework */; };
 		7B935185115152E6A2DAA985 /* Pods_SFCloudMusic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03149FC307EA6E816DBD222A /* Pods_SFCloudMusic.framework */; };
-		C363777C2410D55800A44E1C /* SFLoginAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C363777B2410D55800A44E1C /* SFLoginAPI.swift */; };
+		C363777C2410D55800A44E1C /* SFSeviceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C363777B2410D55800A44E1C /* SFSeviceAPI.swift */; };
 		C36377802410F74A00A44E1C /* SFAuthenticatedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C363777F2410F74A00A44E1C /* SFAuthenticatedUser.swift */; };
 		C36377862410FBE200A44E1C /* loginjson.json in Resources */ = {isa = PBXBuildFile; fileRef = C36377852410FBE200A44E1C /* loginjson.json */; };
 		C36515042407C0A0008558B8 /* SFMediator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C36515032407C0A0008558B8 /* SFMediator.swift */; };
@@ -80,6 +80,7 @@
 		C365154D2407C413008558B8 /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C36515492407C413008558B8 /* Account.storyboard */; };
 		C36515502407C461008558B8 /* SFCycleScrollView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365154E2407C460008558B8 /* SFCycleScrollView1.swift */; };
 		C36515512407C461008558B8 /* SFCycleScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C365154F2407C461008558B8 /* SFCycleScrollView.swift */; };
+		C3A97B8B2411DABE0022671A /* SFProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A97B8A2411DABE0022671A /* SFProvider.swift */; };
 		E517E7C397BEAEA22DEF7E8F /* Pods_SFCloudMusic_SFCloudMusicUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A321410D8C7ED30627969CD /* Pods_SFCloudMusic_SFCloudMusicUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -144,7 +145,7 @@
 		68FADECB5E0E06EDB63C4BF2 /* Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicTests/Pods-SFCloudMusic-SFCloudMusicTests.release.xcconfig"; sourceTree = "<group>"; };
 		96F86953DFA63DF725446EAD /* Pods_SFCloudMusic_SFCloudMusicTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SFCloudMusic_SFCloudMusicTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A489081DB43354771847AD9 /* Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicUITests/Pods-SFCloudMusic-SFCloudMusicUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C363777B2410D55800A44E1C /* SFLoginAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFLoginAPI.swift; sourceTree = "<group>"; };
+		C363777B2410D55800A44E1C /* SFSeviceAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSeviceAPI.swift; sourceTree = "<group>"; };
 		C363777F2410F74A00A44E1C /* SFAuthenticatedUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFAuthenticatedUser.swift; sourceTree = "<group>"; };
 		C36377852410FBE200A44E1C /* loginjson.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = loginjson.json; sourceTree = "<group>"; };
 		C36515032407C0A0008558B8 /* SFMediator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFMediator.swift; sourceTree = "<group>"; };
@@ -186,6 +187,7 @@
 		C36515492407C413008558B8 /* Account.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Account.storyboard; sourceTree = "<group>"; };
 		C365154E2407C460008558B8 /* SFCycleScrollView1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCycleScrollView1.swift; sourceTree = "<group>"; };
 		C365154F2407C461008558B8 /* SFCycleScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFCycleScrollView.swift; sourceTree = "<group>"; };
+		C3A97B8A2411DABE0022671A /* SFProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFProvider.swift; sourceTree = "<group>"; };
 		C7674537F6A9DC86BEEFA4F8 /* Pods-SFCloudMusic-SFCloudMusicUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SFCloudMusic-SFCloudMusicUITests.release.xcconfig"; path = "Target Support Files/Pods-SFCloudMusic-SFCloudMusicUITests/Pods-SFCloudMusic-SFCloudMusicUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -491,7 +493,8 @@
 		C363777A2410D51500A44E1C /* NetWork */ = {
 			isa = PBXGroup;
 			children = (
-				C363777B2410D55800A44E1C /* SFLoginAPI.swift */,
+				C363777B2410D55800A44E1C /* SFSeviceAPI.swift */,
+				C3A97B8A2411DABE0022671A /* SFProvider.swift */,
 			);
 			path = NetWork;
 			sourceTree = "<group>";
@@ -783,7 +786,7 @@
 				393973F323F67DEA00295EAD /* UIImage+UI.swift in Sources */,
 				393973F423F67DEA00295EAD /* UIColor+UI.swift in Sources */,
 				C36515432407C3F2008558B8 /* Target_CloudVillage.swift in Sources */,
-				C363777C2410D55800A44E1C /* SFLoginAPI.swift in Sources */,
+				C363777C2410D55800A44E1C /* SFSeviceAPI.swift in Sources */,
 				C36515422407C3F2008558B8 /* SFCloundVillageViewModel.swift in Sources */,
 				C36377802410F74A00A44E1C /* SFAuthenticatedUser.swift in Sources */,
 				C365150F2407C0A8008558B8 /* CTMediator+Account.swift in Sources */,
@@ -833,6 +836,7 @@
 				3979B23424114B2C00813E0C /* SFUserService.swift in Sources */,
 				39D1484123F502620068E105 /* SFLoginViewController.swift in Sources */,
 				39D1482F23F500D90068E105 /* SFVideoCoordinator.swift in Sources */,
+				C3A97B8B2411DABE0022671A /* SFProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
